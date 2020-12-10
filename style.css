@@ -10,61 +10,118 @@ body {
   padding: 0;
 }
 
+/* Header */
 .header {
   background-color: #000000;
-  display: block;
+  display: flex;
   height: 90px;
 }
 
+/* Logo  block in header and footer */
 .logo {
-  padding: 30px;
+  padding: 30px 0;
 }
 
+/* Menu block in header */
 .menu {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  padding: 30px;
+  padding: 30px 0;
 }
 
+/* Search block in header */
 .search {
   text-align: right;
-  padding: 30px;
-}
-.search > a {
-  color: #929eaf;
-  font-size: 1.06em;
+  padding: 30px 0;
 }
 
+/* Search icon in header */
+.search > a {
+  color: #929eaf;
+  font-size: 1.06em; /* height 17px*/
+}
+
+/* Menu items in header */
 .menu > a {
   color: #ffffff;
   padding: 15px 5px;
-
   text-decoration: none;
 }
+
+/* Responsive header, menu items, search in header */
+@media screen and (max-width: 530px) {
+  .header {
+    height: auto;
+  }
+  .menu > a {
+    display: flex;
+    color: ffffff;
+    justify-content: center;
+  }
+  .search {
+    text-align: center;
+  }
+}
+
+/* Menu items on hover in header */
 .menu > a:hover {
   color: #4a90e2;
 }
 
+/* Search icon on hover in header */
+.search > a:hover {
+  color: #4a90e2;
+}
+
+/* Main */
+.main > .container {
+  display: flex;
+  height: 500px;
+  background-color: yellow;
+}
+
+/* Footer */
 .footer {
-  background-color: #000000;
-  display: block;
-  height: 90px;
+  background-color: #171717;
+  display: flex;
+  height: 500px;
 }
 
-.recent {
-  font-family: PT Sans;
+/* Short description in Logo block in footer */
+.logo p {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #cecece;
+  margin: 0;
+  padding: 28px 0 34px 0;
+}
+
+/* Headings 6 in Footer */
+.footer h6 {
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
+  line-height: 26px;
   color: #ffffff;
+  padding-top: 30px;
+  margin: 0;
 }
 
-.newsletter {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
+/*  Social icons in footer */
+.social {
+  margin: 0;
+  padding-top: 23px;
+  font-size: 34px;
+}
+
+.fab {
   color: #ffffff;
+  width: 33px;
+  height: 33px;
 }
