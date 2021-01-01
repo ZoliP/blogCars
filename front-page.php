@@ -1,92 +1,318 @@
-<!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <title>Blog Cars Template</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog Cars Template">     
-    	
-	<!-- Lato Regular Font -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-	<!-- PT Sans Regular Font -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" media="only screen and (max-width: 530px)" href="">
-	
-	<?php
-		wp_head();
-	?>
-</head> 
-
-<body >
-    <header class="header">
-		<div class="container">
-			<div class="row">	 	
-				<div class="logo col-sm-4">
-				<a href="#home"><img src="./wp-content/themes/blogCars/assets/images/logo.png" alt="logo"></a>
-				</div>
-  		
-		  		<div class="menu col-sm-4">
-					<a href="#home">Home</a>
-					<a href="#recipes">Recipes</a>
-		  			<a href="#article">Article</a>
-		  			<a href="#contact">Contact</a>
-		  			<a href="#purchase">Purchase</a>
-  				</div> 
-  				
-  				<div class="search col-sm-4">
-	    			<a href="#search"><i class="fas fa-search"></i></a>    		
-  				</div>
+<?php
+	get_header();
+?>			
+	<main> 
+		<div class="container" >
+			<div class="bigleft"> 
+				<a href="#bigleft">
+					<img src="./wp-content/themes/blogCars/assets/images/hero_01.png" alt="hero_01.png">
+					<div class="vehicle"> Vehicle</div>  
+					<div class="post-text-header">
+                    	<p>  Rickie Baroch - June 6, 2019</p>	
+						<h6> One of Saturn-s largest rings may be never than...</h6>	
+                	</div> 	
+				</a>
 			</div>
-		</div>	
-	</header>
-	
-	<main class ="main"> 
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					This is the main section 
-				</div>	
-			</div>	
+			<div class="small-left">
+				<div class="up">
+					<a href="#small-left-up">
+						<img src="./wp-content/themes/blogCars/assets/images/hero_03.png" alt="hero_03.png">
+						<div class="vehicle"> Vehicle</div>  
+						<div class="post-text-header">
+                    		<p>  Rickie Baroch - June 6, 2019</p>	
+							<h6> One of Saturn-s largest rings may be never than...</h6>	
+                		</div> 	
+					</a>
+				</div>
+				<div class="down">
+					<a href="#small-left-down">
+						<img src="./wp-content/themes/blogCars/assets/images/hero_04.png" alt="hero_04.png">
+						<div class="vehicle"> Vehicle</div>  
+						<div class="post-text-header">
+                    		<p>  Rickie Baroch - June 6, 2019</p>	
+							<h6> One of Saturn-s largest rings may be never than...</h6>	
+                		</div> 	
+					</a>
+				</div>
+			</div>
+			<div class="small-right">
+				<div class="up">
+					<a href="#small-right-up">
+						<img src="./wp-content/themes/blogCars/assets/images/hero_02.png" alt="hero_02.png">
+						<div class="vehicle"> Vehicle</div>  
+						<div class="post-text-header">
+                    		<p>  Rickie Baroch - June 6, 2019</p>	
+							<h6> One of Saturn-s largest rings may be never than...</h6>	
+                		</div> 	
+					</a>
+				</div>
+				<div class="down">
+					<a href="#small-right-down">
+						<img src="./wp-content/themes/blogCars/assets/images/hero_05.png" alt="hero_05.png">
+						<div class="vehicle"> Vehicle</div>  
+						<div class="post-text-header">
+                    		<p>  Rickie Baroch - June 6, 2019</p>	
+							<h6> One of Saturn-s largest rings may be never than...</h6>	
+                		</div> 	
+					</a>
+				</div>
+			</div>			
 		</div>			
-	</main>
-	
-	<footer class="footer">
+
 		<div class="container">
-			<div class="row">
-				<div class="logo col-sm-3">						
-						<a href="#home"><img src="./wp-content/themes/blogCars/assets/images/logo.png" alt="logo"></a>
-						<p>Short description 
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illo tempore aut 
-							repudiandae, obcaecati, reiciendis, sequi esse earum ratione laboriosam aliquid 
-							architecto veniam illum ducimus optio assumenda in consequuntur voluptate. 
+			<div class="articles">
+				<a href="#article_01">
+					<div class="article">
+						<div class="image">
+							<img src="./wp-content/themes/blogCars/assets/images/article_01.png" alt="article_01.png">
+						</div>
+						<div class="article_info">
+							<div class="article-text-header">
+								<div class="vehicle"> Vehicle</div>  
+								<h6> One of Saturn-s largest rings may be never than anyone</h6>	
+								<p>  Rickie Baroch - June 6, 2019</p>	
+								<p class="article_short">  Sed ut perspiciatis unde omnis iste natus error 
+									sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis 
+									unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+									totam rem 
+								</p>	
+							</div> 
+						</div>
+					</div>	
+				</a>
+
+				<a href="#article_02">
+					<div class="article">
+						<div class="image">
+							<img src="./wp-content/themes/blogCars/assets/images/article_02.png" alt="article_02.png">
+						</div>
+						<div class="article_info">
+							<div class="article-text-header">
+								<div class="vehicle"> Vehicle</div>  
+								<h6> One of Saturn-s largest rings may be never than anyone</h6>	
+								<p>  Rickie Baroch - June 6, 2019</p>	
+								<p class="article_short">  Sed ut perspiciatis unde omnis iste natus error 
+									sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis 
+									unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+									totam rem 
+								</p>	
+							</div> 
+						</div>
+					</div>
+				</a>
+										
+				<a href="#article_03">
+					<div class="article">
+						<div class="image">
+							<img src="./wp-content/themes/blogCars/assets/images/article_03.png" alt="article_03.png">
+						</div>
+						<div class="article_info">
+							<div class="article-text-header">
+								<div class="vehicle"> Vehicle</div>  
+								<h6> One of Saturn-s largest rings may be never than anyone</h6>	
+								<p>  Rickie Baroch - June 6, 2019</p>	
+								<p class="article_short">  Sed ut perspiciatis unde omnis iste natus error 
+									sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis 
+									unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+									totam rem 
+								</p>	
+							</div> 
+						</div>
+					</div>
+				</a>
+					
+				<a href="#article_04">					
+					<div class="article">
+						<div class="image">
+							<img src="./wp-content/themes/blogCars/assets/images/article_04.png" alt="article_04.png">
+						</div>
+						<div class="article_info">
+							<div class="article-text-header">
+								<div class="vehicle"> Vehicle</div>  
+								<h6> One of Saturn-s largest rings may be never than anyone</h6>	
+								<p>  Rickie Baroch - June 6, 2019</p>	
+								<p class="article_short">  Sed ut perspiciatis unde omnis iste natus error 
+									sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis 
+									unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+									totam rem 
+								</p>	
+							</div> 
+						</div>
+					</div>
+				</a>
+					
+				<a href="#article_05">										
+					<div class="article">
+						<div class="image">
+							<img src="./wp-content/themes/blogCars/assets/images/article_05.png" alt="article_05.png">
+						</div>
+						<div class="article_info">
+							<div class="article-text-header">
+								<div class="vehicle"> Vehicle</div>  
+								<h6> One of Saturn-s largest rings may be never than anyone</h6>	
+								<p>  Rickie Baroch - June 6, 2019</p>	
+								<p class="article_short">  Sed ut perspiciatis unde omnis iste natus error 
+									sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis 
+									unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+									totam rem 
+								</p>	
+   	            			</div> 
+						</div>
+					</div>						
+				</a>
+			</div>
+		
+			<div class="col-sm-1"></div>
+
+			<div class="widget">
+				<a href="#about">			
+					<div class="about">
+						<img src="./wp-content/themes/blogCars/assets/images/w_about_us.png" alt="w_about_us.png">
+						<h6> Leon Hunt</h6>
+						<p>Car blogger</p>
+						<p class="author_description"> Hi. I'm Leon. Rewieving cars is the way I express my creative side to the world. Welcome to my 
+							Cars Blog site 
 						</p>
-						<div class="touch"> 
-							<h6>Keep in touch</h6>
-							<div class="social">
-								<a href="#facebook"><i class="fab fa-facebook-square"></i></a>
-								<a href="#twitter"><i class="fab fa-twitter-square"></i></a>
-								<a href="#pinterest"><i class="fab fa-pinterest-square"></i></a>
-								<a href="#googleplus"><i class="fab fa-google-plus-square"></i></a>
-								<a href="#instagram"><i class="fab fa-instagram-square"></i></a>
-							</div>
-						</div>					
-				</div>	
-				<div class="col-sm-1"></div>
-				<div class="recent col-sm-3">
-					<h6>Recent posts</h6>
-				</div>	
-				<div class="col-sm-1"></div>				
-				<div class="newsletter col-sm-3">
-					<h6>Newsletter</h6>
-				</div>	
-				<div class="col-sm-1"></div>				
+						<button type="submit" class="submit btn btn-lg btn-block">Continue reading</button>
+					</div>
+				</a>
+															
+				<div class="popular">
+					<h6>Popular posts</h6>
+					<a href="#popular_01">
+						<div class="popular_post">
+							<img src="./wp-content/themes/blogCars/assets/images/w_popular_post_01.png" alt="w_popular_post_01.png">
+							<div class="vehicle"> Vehicle</div> 
+							<h6>One of Saturn's largest rings may be never than anyone</h6>								<p>Richie Baroch - June 6, 2019</p>
+						</div>	
+					</a>
+					
+					<a href="#popular_02">
+						<div class="popular_post">
+							<img src="./wp-content/themes/blogCars/assets/images/w_popular_post_02.png" alt="w_popular_post_02.png">
+							<div class="vehicle"> Vehicle</div> 
+							<h6>One of Saturn's largest rings may be never than anyone</h6>
+							<p>Richie Baroch - June 6, 2019</p>
+						</div>	
+					</a>
+					
+					<a href="#popular_03">
+						<div class="popular_post">
+							<img src="./wp-content/themes/blogCars/assets/images/w_popular_post_03.png" alt="w_popular_post_03.png">
+							<div class="vehicle"> Vehicle</div> 
+							<h6>One of Saturn's largest rings may be never than anyone</h6>
+							<p>Richie Baroch - June 6, 2019</p>
+						</div>	
+					</a>
+				</div>
+				<div class="instagram">
+					<h6>Instagram</h6>
+					<div class="pic_block">
+						<div class="i1"><img src="./wp-content/themes/blogCars/assets/images/w_instagram_01.png" alt="w_instagram_01.png"></div>
+						<div class="i2"><img src="./wp-content/themes/blogCars/assets/images/w_instagram_02.png" alt="w_instagram_02.png"></div>
+						<div class="i3"><img src="./wp-content/themes/blogCars/assets/images/w_instagram_03.png" alt="w_instagram_03.png"></div>
+						<div class="i4"><img src="./wp-content/themes/blogCars/assets/images/w_instagram_04.png" alt="w_instagram_04.png"></div>
+						<div class="i5"><img src="./wp-content/themes/blogCars/assets/images/w_instagram_05.png" alt="w_instagram_05.png"></div>
+						<div class="i6"><img src="./wp-content/themes/blogCars/assets/images/w_instagram_06.png" alt="w_instagram_06.png"></div>
+					</div>
+					<button type="submit" class="submit btn btn-lg btn-block">
+						<i class="fab fa-instagram"></i>View instagram						 	
+					</button>
+				</div>
+
+				<div class="tag_section">
+					<h6>Tags</h6>
+					<div class="tag_block">
+						<button type="button" class="tag btn ">Business</button>
+						<button type="button" class="tag btn ">Freelance</button>
+						<button type="button" class="tag btn ">Money</button>
+						<button type="button" class="tag btn ">Experience</button>
+						<button type="button" class="tag btn ">Lifestyle</button>
+						<button type="button" class="tag btn ">SEO</button>
+						<button type="button" class="tag btn ">Wordpress</button>
+						<button type="button" class="tag btn ">Marketing</button>
+						<button type="button" class="tag btn ">UX</button>
+						<button type="button" class="tag btn ">Modern</button>
+						<button type="button" class="tag btn ">Success</button>
+						<button type="button" class="tag btn ">Nature</button>
+						<button type="button" class="tag btn ">Productivity</button>
+						<button type="button" class="tag btn ">Sales Page</button>
+						<button type="button" class="tag btn ">Sell</button>
+						<button type="button" class="tag btn ">Teamwork</button>
+						<button type="button" class="tag btn ">Monetize</button>						
+					</div>
+				</div>
+
+				<div class="subscription">
+					<h6>Email newsletter</h6>
+					<p class="subscription_short">Sign up to receive email updates and to hear what's going on. </p>
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control-plaintext" id="name" placeholder="Your name">
+						</div>
+ 						<div class="form-group">
+  							<input type="text" class="form-control-plaintext" id="email" placeholder="Your email address">
+  						</div>
+  						<button type="submit" class="submit btn btn-lg btn-block">Subscribe to newsletter</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="container pagination">
+			<button type="button" class="pag btn i0"><i class="fas fa-angle-left"></i></button>
+			<button type="button" class="pag btn i1">1</button>
+			<button type="button" class="pag btn i2">2</button>
+			<button type="button" class="pag btn i3">3</button>
+			<button type="button" class="pag btn i4">...</button>
+			<button type="button" class="pag btn i5">8</button>
+			<button type="button" class="pag btn i6"><i class="fas fa-angle-right"></i></button>
+		</div>
+			
+		<div class="container most_popular"> 
+			<div class="col-sm-3">
+				<a href="#most_popular_01">
+					<div class="popular_post">
+						<img src="./wp-content/themes/blogCars/assets/images/most_popular_01.png" alt="most_popular_01.png">
+						<div class="vehicle"> Vehicle</div> 
+						<h6>One of Saturn's largest rings may be never than anyone</h6>
+						<p>Richie Baroch - June 6, 2019</p>
+					</div>	
+				</a>
+			</div>		
+			<div class="col-sm-3">
+				<a href="#most_popular_02">
+					<div class="popular_post">
+						<img src="./wp-content/themes/blogCars/assets/images/most_popular_02.png" alt="most_popular_02.png">
+						<div class="vehicle"> Vehicle</div> 
+						<h6>One of Saturn's largest rings may be never than anyone</h6>
+						<p>Richie Baroch - June 6, 2019</p>
+					</div>	
+				</a>
+			</div>		
+			<div class="col-sm-3">
+				<a href="#most_popular_03">
+					<div class="popular_post">
+						<img src="./wp-content/themes/blogCars/assets/images/most_popular_03.png" alt="most_popular_03.png">
+						<div class="vehicle"> Vehicle</div> 
+						<h6>One of Saturn's largest rings may be never than anyone</h6>
+						<p>Richie Baroch - June 6, 2019</p>
+					</div>	
+				</a>
+			</div>		
+			<div class="col-sm-3">
+				<a href="#most_popular_04">
+					<div class="popular_post">
+						<img src="./wp-content/themes/blogCars/assets/images/most_popular_04.png" alt="most_popular_04.png">
+						<div class="vehicle"> Vehicle</div> 
+						<h6>One of Saturn's largest rings may be never than anyone</h6>
+						<p>Richie Baroch - June 6, 2019</p>
+					</div>	
+				</a>
 			</div>			
 		</div>
-	</footer>
-
-</body>
-</html>
+	</main>
+	
+<?php
+	get_footer();
+?> 
