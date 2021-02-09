@@ -1,0 +1,127 @@
+/* Footer */
+footer {
+  background-color: #171717;
+  display: flex;
+  height: auto;
+}
+
+/* Short description in Logo block in footer */
+.logo p {
+  line-height: 22px;
+  color: #cecece;
+  padding: 28px 0 34px 0;
+}
+
+/* "Keep in touch, Recent posts, Newsletter" in Footer */
+footer h5 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+/*  Social icons in footer */
+
+.social {
+  padding-top: 23px;
+}
+.fab {
+  color: #ffffff;
+  width: 33px;
+  height: 33px;
+  font-size: 34px;
+}
+
+/*  Social icons in footer */
+.fab:hover {
+  color: #4a90e2;
+}
+
+/* Recent posts block in Footer */
+.recent {
+  padding: 0 0 60px 0;
+}
+
+/* 'Recent posts, Newsletter' in Footer */
+.recent h5,
+.newsletter h5 {
+  padding-bottom: 28px;
+}
+
+/* One post block in recent posts in Footer */
+.post {
+  display: inline-block;
+  padding: 12px 0 12px 0;
+}
+
+/* Image in recent posts in Footer */
+.post img {
+  float: left;
+  padding-right: 20px;
+}
+
+/* Title in recent posts in Footer */
+.post-text-footer h6 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+/* Author in recent posts in footer */
+.post-text-footer p {
+  font-style: italic;
+  line-height: 14px;
+  color: #cecece;
+  padding-top: 12px;
+}
+
+/* Newsletter inputs in footer */
+.newsletter input {
+  height: 50px;
+  margin: 5px 0 5px 0;
+  background: #373737;
+  border-radius: 3px;
+}
+
+/* Newsletter input placeholder in Footer */
+.newsletter ::placeholder {
+  line-height: 18px;
+  color: #aeb3bb;
+  padding-left: 15px;
+}
+
+/* Subscribe button in newsletter block in Footer */
+.submit {
+  background: #232323;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 50px;
+}
+
+/* Subscribe button in newsletter block in Footer  on hover*/
+.submit:hover {
+  color: #4a90e2;
+}
+
+/* Bottom line footer */
+.footer_with_menu {
+  background-color: #000000;
+  display: flex;
+  height: auto;
+}
+
+/* 'AllRightsReserved' in Footer */
+.rights p {
+  padding: 39px 0 37px 0;
+  color: #ffffff;
+}
+
+/* The menu block from the bottom Footer */
+.footer_with_menu .menu {
+  padding: 39px 0 37px 0;
+  text-align: right;
+}

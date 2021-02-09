@@ -1,0 +1,111 @@
+/* About block in widget section*/
+.about {
+  margin-bottom: 40px;
+}
+
+.about img,
+.popular img,
+.instagram img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Author name*/
+.widget h6 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 43px;
+  padding-top: 20px;
+}
+
+/* Author title*/
+.about p {
+  font-style: italic;
+  color: #999999;
+  padding-top: 8px;
+}
+
+/* Author description*/
+p.author_description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 14px;
+  padding-bottom: 21px;
+}
+
+/* Popular block in widget section*/
+.popular_post {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/*Popular post's title */
+.popular_post h6 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/*Popular post's author */
+.popular_post p {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666666;
+}
+
+/* Instagram block's picture block in widget section*/
+.pic_block {
+  display: grid;
+  grid-template-areas:
+    "i1 i2"
+    "i3 i4"
+    "i5 i6";
+  grid-gap: 10px;
+  padding-bottom: 10px;
+}
+
+/*Instagram button's icon */
+.instagram i {
+  font-size: 14px;
+}
+
+/* Tag block in widget section*/
+.tag_section {
+  margin-top: 40px;
+}
+
+/* Tag buttons*/
+.tag {
+  background-color: #ebebeb;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+/* Subscription block in widget section*/
+.subscription {
+  margin-top: 40px;
+}
+
+/* Subscription description */
+p.subscription_short {
+  line-height: 24px;
+  color: #666666;
+}
+
+/* Subscription input in widget section*/
+.subscription input {
+  border: 1px solid #e5e5e5;
+  height: 50px;
+  border-radius: 3px;
+}
+
+/* Subscription input in widget section*/
+.subscription ::placeholder {
+  line-height: 18px;
+  color: #aeb3bb;
+  padding-left: 15px;
+}

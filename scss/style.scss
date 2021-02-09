@@ -1,0 +1,17 @@
+/*
+Theme Name: Cars
+Text Domain: Cars
+Version: 1.0
+Description: Template for a Blog Cars  site
+Author: Zoltan
+*/
+@import "base/general";
+@import "base/responsive";
+
+@import "layout/header";
+@import "components/hero";
+@import "layout/main";
+@import "components/articles";
+@import "components/widget";
+@import "components/popular_posts";
+@import "layout/footer";

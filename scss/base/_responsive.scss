@@ -1,0 +1,33 @@
+/* Responsive header, menu items, search in header */
+@media only screen and (max-width: 590px) {
+  header {
+    height: auto;
+  }
+
+  footer,
+  .recent,
+  .footer_with_menu {
+    height: auto;
+  }
+
+  li > a {
+    display: flex;
+    justify-content: center;
+  }
+
+  main > .container {
+    flex-direction: column;
+  }
+
+  .footer_with_menu .menu {
+    display: none;
+  }
+
+  .search {
+    text-align: center;
+  }
+
+  .footer_with_menu > .container > .row {
+    flex-direction: column-reverse;
+  }
+}
