@@ -1,64 +1,8 @@
 <?php
 	get_header();
 ?>			
+			
 	<main> 
-		<div class="container" >
-			<div class="bigleft"> 
-				<a href="#bigleft">
-					<img src="./wp-content/themes/blogCars/assets/images/hero_01.png" alt="hero_01.png">
-					<div class="vehicle"> Vehicle</div>  
-					<div class="post-text-header">
-                    	<p>  Rickie Baroch - June 6, 2019</p>	
-						<h6> One of Saturn-s largest rings may be never than...</h6>	
-                	</div> 	
-				</a>
-			</div>
-			<div class="small-left">
-				<div class="up">
-					<a href="#small-left-up">
-						<img src="./wp-content/themes/blogCars/assets/images/hero_03.png" alt="hero_03.png">
-						<div class="vehicle"> Vehicle</div>  
-						<div class="post-text-header">
-                    		<p>  Rickie Baroch - June 6, 2019</p>	
-							<h6> One of Saturn-s largest rings may be never than...</h6>	
-                		</div> 	
-					</a>
-				</div>
-				<div class="down">
-					<a href="#small-left-down">
-						<img src="./wp-content/themes/blogCars/assets/images/hero_04.png" alt="hero_04.png">
-						<div class="vehicle"> Vehicle</div>  
-						<div class="post-text-header">
-                    		<p>  Rickie Baroch - June 6, 2019</p>	
-							<h6> One of Saturn-s largest rings may be never than...</h6>	
-                		</div> 	
-					</a>
-				</div>
-			</div>
-			<div class="small-right">
-				<div class="up">
-					<a href="#small-right-up">
-						<img src="./wp-content/themes/blogCars/assets/images/hero_02.png" alt="hero_02.png">
-						<div class="vehicle"> Vehicle</div>  
-						<div class="post-text-header">
-                    		<p>  Rickie Baroch - June 6, 2019</p>	
-							<h6> One of Saturn-s largest rings may be never than...</h6>	
-                		</div> 	
-					</a>
-				</div>
-				<div class="down">
-					<a href="#small-right-down">
-						<img src="./wp-content/themes/blogCars/assets/images/hero_05.png" alt="hero_05.png">
-						<div class="vehicle"> Vehicle</div>  
-						<div class="post-text-header">
-                    		<p>  Rickie Baroch - June 6, 2019</p>	
-							<h6> One of Saturn-s largest rings may be never than...</h6>	
-                		</div> 	
-					</a>
-				</div>
-			</div>			
-		</div>			
-
 		<div class="container">
 			<div class="articles">
 				<a href="#article_01">
@@ -66,9 +10,9 @@
 						<div class="image">
 							<img src="./wp-content/themes/blogCars/assets/images/article_01.png" alt="article_01.png">
 						</div>
-						<div class="article_info">
+						<div class="article_description">
 							<div class="article-text-header">
-								<div class="vehicle"> Vehicle</div>  
+								<div class="category"> Vehicle</div>  
 								<h6> One of Saturn-s largest rings may be never than anyone</h6>	
 								<p>  Rickie Baroch - June 6, 2019</p>	
 								<p class="article_short">  Sed ut perspiciatis unde omnis iste natus error 
@@ -86,9 +30,9 @@
 						<div class="image">
 							<img src="./wp-content/themes/blogCars/assets/images/article_02.png" alt="article_02.png">
 						</div>
-						<div class="article_info">
+						<div class="article_description">
 							<div class="article-text-header">
-								<div class="vehicle"> Vehicle</div>  
+								<div class="category"> Vehicle</div>  
 								<h6> One of Saturn-s largest rings may be never than anyone</h6>	
 								<p>  Rickie Baroch - June 6, 2019</p>	
 								<p class="article_short">  Sed ut perspiciatis unde omnis iste natus error 
@@ -106,9 +50,9 @@
 						<div class="image">
 							<img src="./wp-content/themes/blogCars/assets/images/article_03.png" alt="article_03.png">
 						</div>
-						<div class="article_info">
+						<div class="article_description">
 							<div class="article-text-header">
-								<div class="vehicle"> Vehicle</div>  
+								<div class="category"> Vehicle</div>  
 								<h6> One of Saturn-s largest rings may be never than anyone</h6>	
 								<p>  Rickie Baroch - June 6, 2019</p>	
 								<p class="article_short">  Sed ut perspiciatis unde omnis iste natus error 
@@ -126,9 +70,9 @@
 						<div class="image">
 							<img src="./wp-content/themes/blogCars/assets/images/article_04.png" alt="article_04.png">
 						</div>
-						<div class="article_info">
+						<div class="article_description">
 							<div class="article-text-header">
-								<div class="vehicle"> Vehicle</div>  
+								<div class="category"> Vehicle</div>  
 								<h6> One of Saturn-s largest rings may be never than anyone</h6>	
 								<p>  Rickie Baroch - June 6, 2019</p>	
 								<p class="article_short">  Sed ut perspiciatis unde omnis iste natus error 
@@ -146,9 +90,9 @@
 						<div class="image">
 							<img src="./wp-content/themes/blogCars/assets/images/article_05.png" alt="article_05.png">
 						</div>
-						<div class="article_info">
+						<div class="article_description">
 							<div class="article-text-header">
-								<div class="vehicle"> Vehicle</div>  
+								<div class="category"> Vehicle</div>  
 								<h6> One of Saturn-s largest rings may be never than anyone</h6>	
 								<p>  Rickie Baroch - June 6, 2019</p>	
 								<p class="article_short">  Sed ut perspiciatis unde omnis iste natus error 
@@ -164,7 +108,7 @@
 		
 			<div class="col-sm-1"></div>
 
-			<div class="widget">
+			<div class="col-sm-3 widget">
 				<a href="#about">			
 					<div class="about">
 						<img src="./wp-content/themes/blogCars/assets/images/w_about_us.png" alt="w_about_us.png">
@@ -182,7 +126,7 @@
 					<a href="#popular_01">
 						<div class="popular_post">
 							<img src="./wp-content/themes/blogCars/assets/images/w_popular_post_01.png" alt="w_popular_post_01.png">
-							<div class="vehicle"> Vehicle</div> 
+							<div class="category"> Vehicle</div> 
 							<h6>One of Saturn's largest rings may be never than anyone</h6>								<p>Richie Baroch - June 6, 2019</p>
 						</div>	
 					</a>
@@ -190,7 +134,7 @@
 					<a href="#popular_02">
 						<div class="popular_post">
 							<img src="./wp-content/themes/blogCars/assets/images/w_popular_post_02.png" alt="w_popular_post_02.png">
-							<div class="vehicle"> Vehicle</div> 
+							<div class="category"> Vehicle</div> 
 							<h6>One of Saturn's largest rings may be never than anyone</h6>
 							<p>Richie Baroch - June 6, 2019</p>
 						</div>	
@@ -199,7 +143,7 @@
 					<a href="#popular_03">
 						<div class="popular_post">
 							<img src="./wp-content/themes/blogCars/assets/images/w_popular_post_03.png" alt="w_popular_post_03.png">
-							<div class="vehicle"> Vehicle</div> 
+							<div class="category"> Vehicle</div> 
 							<h6>One of Saturn's largest rings may be never than anyone</h6>
 							<p>Richie Baroch - June 6, 2019</p>
 						</div>	
@@ -269,12 +213,17 @@
 			<button type="button" class="pag btn i6"><i class="fas fa-angle-right"></i></button>
 		</div>
 			
-		<div class="container most_popular"> 
+		
+		<div class="container mpp">			
+			Most popular
+		</div>
+
+		<div class="container most_popular">
 			<div class="col-sm-3">
 				<a href="#most_popular_01">
 					<div class="popular_post">
 						<img src="./wp-content/themes/blogCars/assets/images/most_popular_01.png" alt="most_popular_01.png">
-						<div class="vehicle"> Vehicle</div> 
+						<div class="category">BMW</div> 
 						<h6>One of Saturn's largest rings may be never than anyone</h6>
 						<p>Richie Baroch - June 6, 2019</p>
 					</div>	
@@ -284,7 +233,7 @@
 				<a href="#most_popular_02">
 					<div class="popular_post">
 						<img src="./wp-content/themes/blogCars/assets/images/most_popular_02.png" alt="most_popular_02.png">
-						<div class="vehicle"> Vehicle</div> 
+						<div class="category">BMW</div> 
 						<h6>One of Saturn's largest rings may be never than anyone</h6>
 						<p>Richie Baroch - June 6, 2019</p>
 					</div>	
@@ -294,7 +243,7 @@
 				<a href="#most_popular_03">
 					<div class="popular_post">
 						<img src="./wp-content/themes/blogCars/assets/images/most_popular_03.png" alt="most_popular_03.png">
-						<div class="vehicle"> Vehicle</div> 
+						<div class="category">BMW</div> 
 						<h6>One of Saturn's largest rings may be never than anyone</h6>
 						<p>Richie Baroch - June 6, 2019</p>
 					</div>	
@@ -304,11 +253,11 @@
 				<a href="#most_popular_04">
 					<div class="popular_post">
 						<img src="./wp-content/themes/blogCars/assets/images/most_popular_04.png" alt="most_popular_04.png">
-						<div class="vehicle"> Vehicle</div> 
+						<div class="category">BMW</div> 
 						<h6>One of Saturn's largest rings may be never than anyone</h6>
 						<p>Richie Baroch - June 6, 2019</p>
 					</div>	
-				</a>
+				</a>					
 			</div>			
 		</div>
 	</main>
