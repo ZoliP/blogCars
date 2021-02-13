@@ -1,6 +1,6 @@
 /* Footer */
 footer {
-  background-color: #171717;
+  background-color: $color-bg-footer;
   display: flex;
   height: auto;
 }
@@ -8,7 +8,7 @@ footer {
 /* Short description in Logo block in footer */
 .logo p {
   line-height: 22px;
-  color: #cecece;
+  color: $color-text-footer;
   padding: 28px 0 34px 0;
 }
 
@@ -17,7 +17,7 @@ footer h5 {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
-  color: #ffffff;
+  color: $color-text-light;
   padding-top: 30px;
 }
 
@@ -27,7 +27,7 @@ footer h5 {
   padding-top: 23px;
 }
 .fab {
-  color: #ffffff;
+  color: $color-text-light;
   width: 33px;
   height: 33px;
   font-size: 34px;
@@ -35,7 +35,7 @@ footer h5 {
 
 /*  Social icons in footer */
 .fab:hover {
-  color: #4a90e2;
+  color: $color-text-hover;
 }
 
 /* Recent posts block in Footer */
@@ -66,14 +66,14 @@ footer h5 {
   font-weight: bold;
   font-size: 15px;
   line-height: 26px;
-  color: #ffffff;
+  color: $color-text-light;
 }
 
 /* Author in recent posts in footer */
 .post-text-footer p {
   font-style: italic;
   line-height: 14px;
-  color: #cecece;
+  color: $color-text-footer;
   padding-top: 12px;
 }
 
@@ -81,35 +81,35 @@ footer h5 {
 .newsletter input {
   height: 50px;
   margin: 5px 0 5px 0;
-  background: #373737;
+  background: $color-bg-newsletter-input;
   border-radius: 3px;
 }
 
 /* Newsletter input placeholder in Footer */
 .newsletter ::placeholder {
   line-height: 18px;
-  color: #aeb3bb;
+  color: $color-subscription-placeholder;
   padding-left: 15px;
 }
 
 /* Subscribe button in newsletter block in Footer */
 .submit {
-  background: #232323;
+  background: $color-subscribe-btn;
   border-radius: 3px;
   font-weight: bold;
-  font-size: 14px;
-  color: #ffffff;
+  font-size: $font-size;
+  color: $color-text-light;
   height: 50px;
 }
 
 /* Subscribe button in newsletter block in Footer  on hover*/
 .submit:hover {
-  color: #4a90e2;
+  color: $color-text-hover;
 }
 
 /* Bottom line footer */
 .footer_with_menu {
-  background-color: #000000;
+  background-color: $color-bg-header;
   display: flex;
   height: auto;
 }
@@ -117,7 +117,7 @@ footer h5 {
 /* 'AllRightsReserved' in Footer */
 .rights p {
   padding: 39px 0 37px 0;
-  color: #ffffff;
+  color: $color-text-light;
 }
 
 /* The menu block from the bottom Footer */

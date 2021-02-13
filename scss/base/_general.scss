@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: #171717;
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color-text-dark;
   text-decoration: none;
 }
 
@@ -27,7 +27,7 @@ a:hover {
 
 /* Logo  block in header and footer*/
 .logo {
-  padding: 30px 0;
+  padding: 36px 0;
 }
 
 /* Category symbol left upper corner in posts*/
@@ -37,8 +37,8 @@ a:hover {
   left: 30px;
   width: auto;
   height: 22px;
-  background-color: #4a90e2;
-  color: #ffffff;
+  background-color: $color-bg-category;
+  color: $color-text-category;
   border-radius: 3px;
   font-size: 12px;
   line-height: 16px;

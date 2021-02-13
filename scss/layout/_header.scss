@@ -1,6 +1,6 @@
 /* Header */
 header {
-  background-color: #000000;
+  background-color: $color-bg-header;
   display: flex;
   height: auto;
 }
@@ -20,13 +20,13 @@ ul li {
 
 /* Menu items */
 li a {
-  color: #ffffff;
+  color: $color-text-light;
   padding: 36px 5px;
 }
 
 /* Menu items on hover */
 li a:hover {
-  color: #4a90e2;
+  color: $color-text-hover;
   text-decoration: none;
 }
 
@@ -35,14 +35,15 @@ li a:hover {
   display: inline-block;
   text-align: right;
   position: relative;
+  padding: 0;
 }
 
 .search-input {
   display: none;
   float: left;
-  background-color: #000000;
-  color: #ffffff;
-  width: 90%;
+  background-color: $color-bg-header;
+  color: $color-text-light;
+  width: 70%;
   min-height: 17px;
   position: absolute;
   top: 50%;
@@ -57,9 +58,9 @@ input:target {
 /* Search icon in header */
 .search i {
   padding: 36px 0 36px 36px;
-  color: #929eaf;
+  color: $color-icon;
   font-size: 17px;
-  position: absolute;
+  position: relative;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -67,5 +68,5 @@ input:target {
 
 /* Search icon on hover in header */
 .search i:hover {
-  color: #4a90e2;
+  color: $color-text-hover;
 }

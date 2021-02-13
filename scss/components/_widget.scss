@@ -22,14 +22,14 @@
 /* Author title*/
 .about p {
   font-style: italic;
-  color: #999999;
+  color: $color-text-author-about;
   padding-top: 8px;
 }
 
 /* Author description*/
 p.author_description {
-  font-style: normal;
-  font-weight: normal;
+  font-style: $font-style;
+  font-weight: $font-weight;
   font-size: 15px;
   line-height: 25px;
   padding-top: 14px;
@@ -52,7 +52,7 @@ p.author_description {
 .popular_post p {
   margin-top: 10px;
   font-style: italic;
-  color: #666666;
+  color: $color-text-article;
 }
 
 /* Instagram block's picture block in widget section*/
@@ -68,7 +68,7 @@ p.author_description {
 
 /*Instagram button's icon */
 .instagram i {
-  font-size: 14px;
+  font-size: $font-size;
 }
 
 /* Tag block in widget section*/
@@ -78,7 +78,7 @@ p.author_description {
 
 /* Tag buttons*/
 .tag {
-  background-color: #ebebeb;
+  background-color: $color-bg-tag;
   font-size: 18px;
   line-height: 18px;
   border-radius: 3px;
@@ -93,12 +93,12 @@ p.author_description {
 /* Subscription description */
 p.subscription_short {
   line-height: 24px;
-  color: #666666;
+  color: $color-text-article;
 }
 
 /* Subscription input in widget section*/
 .subscription input {
-  border: 1px solid #e5e5e5;
+  border: 1px solid $color-subscription-border;
   height: 50px;
   border-radius: 3px;
 }
@@ -106,6 +106,6 @@ p.subscription_short {
 /* Subscription input in widget section*/
 .subscription ::placeholder {
   line-height: 18px;
-  color: #aeb3bb;
+  color: $color-subscription-placeholder;
   padding-left: 15px;
 }
