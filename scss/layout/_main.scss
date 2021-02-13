@@ -21,6 +21,6 @@ main .container {
 }
 
 .pag:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: $color-text-dark;
+  color: $color-text-light;
 }
