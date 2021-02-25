@@ -1,0 +1,58 @@
+/* Articles or posts*/
+.article {
+  width: 770px;
+  height: 560px;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+/*Responsive Images in the articles*/
+.image > .wp-post-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+/*Articles block */
+.article_description {
+  position: absolute;
+  width: 730px;
+  height: 249px;
+  margin: 311px 20px 120px 20px;
+  opacity: 1;
+  background-color: $color-bg-article;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: auto 20px 0 20px;
+  z-index: 1;
+  float: left;
+}
+
+/* Articles title*/
+.article_description h6 {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 28px;
+  padding: 72px 0 15px 30px;
+}
+
+/* Articles author*/
+.article_description p,
+.article_description span {
+  font-style: italic;
+  padding-left: 30px;
+  padding-right: 86px;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+/* Articles short description*/
+.article_short > p {
+  padding-top: 0;
+  height: 72px;
+  line-height: 24px;
+  font-style: $font-style;
+  color: $color-text-article;
+  overflow: hidden;
+}

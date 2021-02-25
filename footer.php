@@ -8,20 +8,26 @@
 						}
 					?>					
 					<!-- <a href="#home"><img src="./wp-content/themes/blogCars/assets/images/logo.png" alt="logo"></a> -->
-					<p>Short description 
+					<!-- <p>Short description 
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illo tempore aut 
 						repudiandae, obcaecati, reiciendis, sequi esse earum ratione laboriosam aliquid 
 						architecto veniam illum ducimus optio assumenda in consequuntur voluptate. 
-					</p>
+					</p> -->
+					<?php
+						dynamic_sidebar('footer-1');
+					?>
 					<div class="touch"> 
-						<h5>Keep in touch</h5>
+						<!-- <h5>Keep in touch</h5>
 						<div class="social">
 							<a href="#facebook"><i class="fab fa-facebook-square"></i></a>
 							<a href="#twitter"><i class="fab fa-twitter-square"></i></a>
 							<a href="#pinterest"><i class="fab fa-pinterest-square"></i></a>
 							<a href="#googleplus"><i class="fab fa-google-plus-square"></i></a>
 							<a href="#instagram"><i class="fab fa-instagram-square"></i></a>
-						</div>
+						</div> -->
+						<?php
+							dynamic_sidebar('footer-2');
+						?>
 					</div>					
 				</div>	
 				<div class="col-sm-1"></div>
@@ -69,7 +75,7 @@
     						<input type="text" class="form-control-plaintext" id="name" placeholder="Your name">
   						</div>
   						<div class="form-group">
-   							<input type="text" class="form-control-plaintext" id="email" placeholder="Your email address">
+   							<input type="email" class="form-control-plaintext" id="email" placeholder="Your email address">
   						</div>
   						<button type="submit" class="submit btn btn-lg btn-block">Subscribe to newsletter</button>
 					</form>
@@ -82,7 +88,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="rights col-sm-3">
-					<p> @2020 Z. All Rights Reserved.</p>	
+					<p> @<?php echo date('Y'); ?> Z. All Rights Reserved.</p>	
 				</div>
 				<div class="col-sm-5"></div>
 
@@ -99,6 +105,10 @@
 			</div>			
 		</div>
 	</footer>
+
+<?php
+	wp_footer();
+?> 
 
 </body>
 </html>

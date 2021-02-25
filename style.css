@@ -177,6 +177,7 @@ input:target {
 }
 
 .mask {
+  border-radius: 5px;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4));
   z-index: 1;
 }
@@ -248,10 +249,11 @@ main .container {
 }
 
 /*Responsive Images in the articles*/
-.article img {
+.image > .wp-post-image {
   position: relative;
   width: 100%;
   height: auto;
+  padding: 0;
 }
 
 /*Articles block */
@@ -274,23 +276,83 @@ main .container {
   font-weight: bold;
   font-size: 25px;
   line-height: 28px;
-  padding-top: 72px;
-  padding-left: 30px;
+  padding: 72px 0 15px 30px;
 }
 
 /* Articles author*/
-.article_description p {
+.article_description p,
+.article_description span {
   font-style: italic;
-  padding-top: 15px;
   padding-left: 30px;
+  padding-right: 86px;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
 }
 
 /* Articles short description*/
-p.article_short {
+.article_short > p {
+  padding-top: 0;
+  height: 72px;
   line-height: 24px;
   font-style: normal;
   color: #666666;
-  padding: 15px 86px 30px 30px;
+  overflow: hidden;
+}
+
+/* Category symbol left upper corner in posts*/
+.single > ul > li > a {
+  width: auto;
+  height: 22px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 12px 2px 12px;
+}
+
+/*Responsive Images in the articles*/
+.image {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+/*Articles block */
+.single {
+  width: 810px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: auto 20px 0 20px;
+}
+
+/* Articles title*/
+.single-article h6 {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 28px;
+}
+
+/* Articles author*/
+.single-article p {
+  font-style: normal;
+  padding: 10px;
+}
+
+.s-article > p {
+  font-style: normal;
+  width: 790px;
+  overflow-wrap: break-word;
+}
+
+/* wordpress commenter and date*/
+.fn a,
+.commentmetadata a {
+  color: #666666;
 }
 
 /* About block in widget section*/
@@ -351,13 +413,19 @@ p.author_description {
 }
 
 /* Instagram block's picture block in widget section*/
-.pic_block {
+/*.pic_block {
   display: grid;
-  grid-template-areas: "i1 i2" "i3 i4" "i5 i6";
+  grid-template-areas:
+    "i1 i2"
+    "i3 i4"
+    "i5 i6";
   grid-gap: 10px;
   padding-bottom: 10px;
 }
 
+.gallery-item {
+  margin: 0;
+}*/
 /*Instagram button's icon */
 .instagram i {
   font-size: 14px;
@@ -369,12 +437,24 @@ p.author_description {
 }
 
 /* Tag buttons*/
-.tag {
+.tag_section > ul > li > a {
   background-color: #ebebeb;
-  font-size: 18px;
+  color: #171717;
+  font-size: 14px;
   line-height: 18px;
   border-radius: 3px;
   margin: 5px;
+  padding: 7px 15px 7px 15px;
+}
+
+.tag_section > ul > li > a:hover {
+  color: #4a90e2;
+}
+
+.tag_section > ul {
+  padding: 0;
+  line-height: 45px;
+  text-align: left;
 }
 
 /* Subscription block in widget section*/
@@ -449,7 +529,8 @@ footer {
 .logo p {
   line-height: 22px;
   color: #cecece;
-  padding: 28px 0 34px 0;
+  padding: 28px 0 22px 0;
+  margin: 0;
 }
 
 /* "Keep in touch, Recent posts, Newsletter" in Footer */
@@ -463,7 +544,7 @@ footer h5 {
 
 /*  Social icons in footer */
 .social {
-  padding-top: 23px;
+  padding-top: 12px;
 }
 
 .fab {

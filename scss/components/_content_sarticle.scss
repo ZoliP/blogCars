@@ -1,0 +1,57 @@
+/* Category symbol left upper corner in posts*/
+.single > ul > li > a
+// .s-category
+{
+  width: auto;
+  height: 22px;
+  background-color: $color-bg-category;
+  color: $color-text-category;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 12px 2px 12px;
+}
+
+/*Responsive Images in the articles*/
+.image {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+/*Articles block */
+.single {
+  width: 810px;
+  height: auto;
+  margin: 0 auto;
+  background-color: $color-bg-article;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: auto 20px 0 20px;
+}
+
+/* Articles title*/
+.single-article h6 {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 28px;
+}
+
+/* Articles author*/
+.single-article p {
+  font-style: $font-style;
+  padding: 10px;
+}
+
+.s-article > p {
+  font-style: normal;
+  width: 790px;
+  overflow-wrap: break-word;
+}
+
+/* wordpress commenter and date*/
+.fn a,
+.commentmetadata a {
+  color: $color-text-article;
+}

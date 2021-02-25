@@ -4,8 +4,8 @@
 function zoltan_theme_support() {
 
     add_theme_support('title-tag');
-
     add_theme_support('custom-logo');
+    add_theme_support('post-thumbnails');
 
 }
 
@@ -40,5 +40,68 @@ function zoltan_register_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'zoltan_register_styles');
+
+
+//Adds scripts for the site
+function zoltan_register_scripts() {
+    
+    wp_enqueue_script('zoltan-jquery', "https://code.jquery.com/jquery-3.5.1.slim.min.js", array(), '3.5.1', true);
+    wp_enqueue_script('zoltan-popper', "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js", array(), '3.5.1', true);
+    wp_enqueue_script('zoltan-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js", array(), '3.5.1', true);
+
+}
+
+add_action('wp_enqueue_scripts', 'zoltan_register_scripts');
+
+function zoltan_widget_areas(){
+
+    register_sidebar(
+        array(
+            'before_title' => '<h6>',
+            'after_title' => '</h6>',
+            'before_widget' => '',
+            'after_widget' => '',
+            'name' => 'Sidebar Area Gallery',
+            'id' => 'sidebar-3',
+            'description' => 'For Instagram Gallery',
+        )
+        );
+    register_sidebar(
+        array(
+            'before_title' => '<h6>',
+            'after_title' => '</h6>',
+            'before_widget' => '',
+            'after_widget' => '',
+            'name' => 'Sidebar Area Tags',
+            'id' => 'sidebar-4',
+            'description' => 'For Tags',
+        )
+        );
+    
+    register_sidebar(
+        array(
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '',
+            'after_widget' => '',
+            'name' => 'Footer Area Short Description',
+            'id' => 'footer-1',
+            'description' => 'About...',
+        )
+        );
+    register_sidebar(
+        array(
+            'before_title' => '<h5>',
+            'after_title' => '</h5>',
+            'before_widget' => '<div class="social">',
+            'after_widget' => '</div>',
+            'name' => 'Footer Area Social',
+            'id' => 'footer-2',
+            'description' => 'Keep in Touch',
+        )
+        );
+}
+
+add_action('widgets_init', 'zoltan_widget_areas');
 
 ?>
