@@ -95,7 +95,7 @@
 				<?php
 		 		wp_nav_menu(
 					array(
-						'menu' => 'primary',
+						'menu' => 'footer',
 						'container' => 'container',						
 						'theme_location' =>'primary',
 						'items_wrap' => '
