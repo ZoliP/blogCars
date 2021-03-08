@@ -40,51 +40,30 @@ a:hover {
 /* Category symbol left upper corner in posts*/
 .category {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 8px;
+  left: 8px;
   width: auto;
   height: 22px;
+  line-height: 16px;
   background-color: #4a90e2;
   color: #ffffff;
   border-radius: 3px;
   font-size: 12px;
-  line-height: 16px;
   padding: 4px 12px 2px 12px;
 }
-
-/* Responsive header, menu items, search in header */
-@media only screen and (max-width: 590px) {
-  header {
-    height: auto;
-  }
-
-  footer,
-.recent,
-.footer_with_menu {
-    height: auto;
-  }
-
-  li > a {
-    display: flex;
-    justify-content: center;
-  }
-
-  main > .container {
-    flex-direction: column;
-  }
-
-  .footer_with_menu .menu {
-    display: none;
-  }
-
-  .search {
-    text-align: center;
-  }
-
-  .footer_with_menu > .container > .row {
-    flex-direction: column-reverse;
+@media only screen and (min-width: 768px) {
+  .category {
+    top: 15px;
+    left: 15px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .category {
+    top: 30px;
+    left: 30px;
+  }
+}
+
 /* Header */
 header {
   background-color: #000000;
@@ -102,11 +81,25 @@ header {
 }
 
 ul {
-  line-height: 90px;
   text-align: center;
   list-style-type: none;
   overflow: hidden;
   margin-bottom: 0;
+}
+@media only screen and (min-width: 576px) {
+  ul {
+    line-height: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  ul {
+    line-height: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  ul {
+    line-height: 90px;
+  }
 }
 
 ul li {
@@ -116,7 +109,21 @@ ul li {
 /* Menu items */
 li a {
   color: #ffffff;
-  padding: 36px 5px;
+}
+@media only screen and (min-width: 576px) {
+  li a {
+    padding: 10px 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  li a {
+    padding: 10px 5px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  li a {
+    padding: 36px 5px;
+  }
 }
 
 /* Menu items on hover */
@@ -135,7 +142,7 @@ li a:hover {
 
 .search-input {
   display: none;
-  float: left;
+  float: right;
   background-color: #000000;
   color: #ffffff;
   width: 70%;
@@ -250,61 +257,143 @@ main .container {
 
 /* Articles or posts*/
 .article {
-  width: 770px;
-  height: 560px;
   display: flex;
   margin-bottom: 60px;
+  width: 350px;
+  height: 255px;
+}
+@media only screen and (min-width: 768px) {
+  .article {
+    width: 520px;
+    height: 378px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .article {
+    width: 770px;
+    height: 560px;
+  }
 }
 
 /*Responsive Images in the articles*/
 .image > .wp-post-image {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: 350px;
+  height: 200px;
   padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  .image > .wp-post-image {
+    width: 520px;
+    height: 297px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .image > .wp-post-image {
+    width: 770px;
+    height: 440px;
+  }
 }
 
 /*Articles block */
 .article_description {
   position: absolute;
-  width: 730px;
-  height: 249px;
-  margin: 311px 20px 120px 20px;
   opacity: 1;
   background-color: #ffffff;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: auto 20px 0 20px;
   z-index: 1;
   float: left;
+  width: 332px;
+  height: 135px;
+  margin: 141px 9px 54px 9px;
+  padding: auto 5px 0 5px;
+}
+@media only screen and (min-width: 768px) {
+  .article_description {
+    width: 493px;
+    height: 200px;
+    margin: 210px 13.5px 81px 13.5px;
+    padding: auto 10px 0 10px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .article_description {
+    width: 730px;
+    height: 249px;
+    margin: 311px 20px 120px 20px;
+    padding: auto 20px 0 20px;
+  }
 }
 
 /* Articles title*/
 .article_description h6 {
   font-weight: bold;
-  font-size: 25px;
-  line-height: 28px;
-  padding: 72px 0 15px 30px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 40px 0 3px 7px;
+}
+@media only screen and (min-width: 768px) {
+  .article_description h6 {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 50px 0 7px 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .article_description h6 {
+    font-size: 25px;
+    line-height: 28px;
+    padding: 72px 0 15px 30px;
+  }
 }
 
 /* Articles author*/
 .article_description p,
 .article_description span {
   font-style: italic;
-  padding-left: 30px;
-  padding-right: 86px;
   overflow-wrap: break-word;
   margin-bottom: 0;
+  padding-left: 7px;
+  padding-right: 21px;
+}
+@media only screen and (min-width: 768px) {
+  .article_description p,
+.article_description span {
+    padding-left: 15px;
+    padding-right: 43px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .article_description p,
+.article_description span {
+    padding-left: 30px;
+    padding-right: 86px;
+  }
 }
 
 /* Articles short description*/
 .article_short > p {
   padding-top: 0;
-  height: 72px;
-  line-height: 24px;
+  height: 30px;
+  line-height: 12px;
   font-style: normal;
-  color: #666666;
+  color: #ffffff;
   overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .article_short > p {
+    color: #666666;
+    height: 36px;
+    line-height: 21px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .article_short > p {
+    color: #666666;
+    height: 72px;
+    line-height: 24px;
+  }
 }
 
 /* Category symbol left upper corner in posts*/

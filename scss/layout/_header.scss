@@ -16,11 +16,19 @@ header {
 }
 
 ul {
-  line-height: 90px;
   text-align: center;
   list-style-type: none;
   overflow: hidden;
   margin-bottom: 0;
+  @include responsive(sm) {
+    line-height: 30px;
+  }
+  @include responsive(md) {
+    line-height: 30px;
+  }
+  @include responsive(lg) {
+    line-height: 90px;
+  }
 }
 
 ul li {
@@ -30,7 +38,15 @@ ul li {
 /* Menu items */
 li a {
   color: $color-text-light;
-  padding: 36px 5px;
+  @include responsive(sm) {
+    padding: 10px 5px;
+  }
+  @include responsive(md) {
+    padding: 10px 5px;
+  }
+  @include responsive(lg) {
+    padding: 36px 5px;
+  }
 }
 
 /* Menu items on hover */
@@ -49,7 +65,7 @@ li a:hover {
 
 .search-input {
   display: none;
-  float: left;
+  float: right;
   background-color: $color-bg-header;
   color: $color-text-light;
   width: 70%;

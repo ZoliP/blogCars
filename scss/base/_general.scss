@@ -33,14 +33,22 @@ a:hover {
 /* Category symbol left upper corner in posts*/
 .category {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 8px;
+  left: 8px;
   width: auto;
   height: 22px;
+  line-height: 16px;
   background-color: $color-bg-category;
   color: $color-text-category;
   border-radius: 3px;
   font-size: 12px;
-  line-height: 16px;
   padding: 4px 12px 2px 12px;
+  @include responsive(md) {
+    top: 15px;
+    left: 15px;
+  }
+  @include responsive(lg) {
+    top: 30px;
+    left: 30px;
+  }
 }

@@ -1,58 +1,114 @@
 /* Articles or posts*/
 .article {
-  width: 770px;
-  height: 560px;
   display: flex;
   margin-bottom: 60px;
+  width: 350px;
+  height: 255px;
+  @include responsive(md) {
+    width: 520px;
+    height: 378px;
+  }
+  @include responsive(lg) {
+    width: 770px;
+    height: 560px;
+  }
 }
 
 /*Responsive Images in the articles*/
 .image > .wp-post-image {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: 350px;
+  height: 200px;
   padding: 0;
+  @include responsive(md) {
+    width: 520px;
+    height: 297px;
+  }
+  @include responsive(lg) {
+    width: 770px;
+    height: 440px;
+  }
 }
 
 /*Articles block */
 .article_description {
   position: absolute;
-  width: 730px;
-  height: 249px;
-  margin: 311px 20px 120px 20px;
   opacity: 1;
   background-color: $color-bg-article;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: auto 20px 0 20px;
   z-index: 1;
   float: left;
+  width: 332px;
+  height: 135px;
+  margin: 141px 9px 54px 9px;
+  padding: auto 5px 0 5px;
+  @include responsive(md) {
+    width: 493px;
+    height: 200px;
+    margin: 210px 13.5px 81px 13.5px;
+    padding: auto 10px 0 10px;
+  }
+  @include responsive(lg) {
+    width: 730px;
+    height: 249px;
+    margin: 311px 20px 120px 20px;
+    padding: auto 20px 0 20px;
+  }
 }
 
 /* Articles title*/
 .article_description h6 {
   font-weight: bold;
-  font-size: 25px;
-  line-height: 28px;
-  padding: 72px 0 15px 30px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 40px 0 3px 7px;
+  @include responsive(md) {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 50px 0 7px 15px;
+  }
+  @include responsive(lg) {
+    font-size: 25px;
+    line-height: 28px;
+    padding: 72px 0 15px 30px;
+  }
 }
 
 /* Articles author*/
 .article_description p,
 .article_description span {
   font-style: italic;
-  padding-left: 30px;
-  padding-right: 86px;
   overflow-wrap: break-word;
   margin-bottom: 0;
+  padding-left: 7px;
+  padding-right: 21px;
+  @include responsive(md) {
+    padding-left: 15px;
+    padding-right: 43px;
+  }
+  @include responsive(lg) {
+    padding-left: 30px;
+    padding-right: 86px;
+  }
 }
 
 /* Articles short description*/
 .article_short > p {
   padding-top: 0;
-  height: 72px;
-  line-height: 24px;
+  height: 30px;
+  line-height: 12px;
   font-style: $font-style;
-  color: $color-text-article;
+  color: $color-bg-article;
   overflow: hidden;
+  @include responsive(md) {
+    color: $color-text-article;
+    height: 36px;
+    line-height: 21px;
+  }
+  @include responsive(lg) {
+    color: $color-text-article;
+    height: 72px;
+    line-height: 24px;
+  }
 }
