@@ -94,13 +94,23 @@
 
 				<?php
 		 		wp_nav_menu(
-					 array(
-						'menu' => 'footer',
+					array(
+						'menu' => 'primary',
 						'container' => 'container',						
-						'theme_location' =>'footer',
-						'items_wrap' => '<ul id="" class="col-sm-4" >%3$s</ul>'
+						'theme_location' =>'primary',
+						'items_wrap' => '
+						<div class="col-sm-4">
+							<nav class="navbar navbar-expand-lg justify-content-center" style="padding:0;">
+						  		<button class="navbar-toggler align-bottom navbar-button-custom" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon navbar-custom"></span>
+						  		</button>
+						  	<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav">%3$s</ul> 
+						  	</div>
+							</nav>
+						</div>'
 					 )
-				); 
+					); 
 		  		?>				
 			</div>			
 		</div>

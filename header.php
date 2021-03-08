@@ -25,24 +25,54 @@
 				<!-- <a href="#home"><img src="./wp-content/themes/blogCars/assets/images/logo.png" alt="logo"></a> -->
 				</div>
   		
-		  		<?php
+		  		 <?php
 		 			wp_nav_menu(
 					 array(
 						'menu' => 'primary',
 						'container' => 'container',						
 						'theme_location' =>'primary',
-						'items_wrap' => '<ul id="" class="col-sm-4 " >%3$s</ul>'
+						'items_wrap' => '
+						<div class="col-sm-4">
+							<nav class="navbar navbar-expand-lg justify-content-center" style="padding:0;">
+						  		<button class="navbar-toggler align-bottom navbar-button-custom" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon navbar-custom"></span>
+						  		</button>
+						  		<div class="collapse navbar-collapse" id="navbarNav">
+									<ul class="navbar-nav">%3$s</ul> 
+								</div>
+							</nav>
+						</div>'
 					 )
 					); 
 		  		?>
-		  			<!--	<ul class=" col-sm-4">
-				  				<li><a href="#home">Home</a></li>
-				  				<li><a href="#recipes">Recipes</a></li>
-				  				<li><a href="#article">Article</a></li>
-				  				<li><a href="#contact">Contact</a></li>
-				  				<li><a href="#purchase">Purchase</a></li>
-  							</ul> 
-					-->
+				<!-- <div class="col-sm-4">
+					<nav class="navbar navbar-expand-lg justify-content-center" style="padding:0;">
+					<button class="navbar-toggler align-bottom navbar-button-custom" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon navbar-custom"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#home">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#recipes">Recipes</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#article">Article</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#purchase">Purchase</a>
+							</li>
+						</ul>
+					</div>
+					</nav>
+				</div> -->
+
+					
   				<div class="search col-sm-4">
 					<input id="search" type="text" class="search-input" placeholder="Search">
 	    			<a href="#search">
