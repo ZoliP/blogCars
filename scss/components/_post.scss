@@ -60,17 +60,17 @@
 /* Articles title*/
 .article_description h6 {
   font-weight: bold;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: $font-size;
+  line-height: $line-height;
   padding: 40px 0 3px 7px;
   @include responsive(md) {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: $font-size-h6-md;
+    line-height: $line-height-h6-md;
     padding: 50px 0 7px 15px;
   }
   @include responsive(lg) {
-    font-size: 25px;
-    line-height: 28px;
+    font-size: $font-size-h6-lg;
+    line-height: $line-height-h6-lg;
     padding: 72px 0 15px 30px;
   }
 }

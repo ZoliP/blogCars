@@ -117,12 +117,17 @@ footer h5 {
 
 /* 'AllRightsReserved' in Footer */
 .rights p {
+  margin: 0;
   padding: 39px 0 37px 0;
   color: $color-text-light;
 }
 
 /* The menu block from the bottom Footer */
-.footer_with_menu .menu {
-  padding: 39px 0 37px 0;
+.footer_with_menu .col-sm-4 {
+  //padding: 39px 0 37px 0;
   text-align: right;
+  display: none;
+  @include responsive(lg) {
+    display: block;
+  }
 }

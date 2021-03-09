@@ -87,10 +87,9 @@
 	<div class="footer_with_menu">
 		<div class="container">
 			<div class="row">
-				<div class="rights col-sm-3">
+				<div class="rights col-sm-8">
 					<p> @<?php echo date('Y'); ?> Z. All Rights Reserved.</p>	
 				</div>
-				<div class="col-sm-5"></div>
 
 				<?php
 		 		wp_nav_menu(

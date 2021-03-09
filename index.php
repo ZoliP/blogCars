@@ -3,11 +3,11 @@
 ?>	
  
 
-    <div class="container hero" >
+ <div class="container hero" >
         <div class="hero-01"> 
-            <div class="mask">
+            <div class="mask-01">
                 <a href="#hero-01">
-                    <img src="./wp-content/themes/blogCars/assets/images/hero_01.png" alt="hero_01.png">
+                    <img id="img-01" src="./wp-content/themes/blogCars/assets/images/hero_01.png" alt="hero_01.png">
                     <div class="category"> Vehicle</div>  
                     <div class="post-text-header">
                         <p>  Rickie Baroch - June 6, 2019</p>	
@@ -20,7 +20,7 @@
         <div class="hero-02">
             <div class="mask">				
                 <a href="#hero-02">
-                    <img src="./wp-content/themes/blogCars/assets/images/hero_02.png" alt="hero_03.png">
+                    <img id="img-02" src="./wp-content/themes/blogCars/assets/images/hero_02.png" alt="hero_03.png">
                     <div class="category"> Vehicle</div>  
                     <div class="post-text-header">
                         <p>  Rickie Baroch - June 6, 2019</p>	
@@ -33,7 +33,7 @@
         <div class="hero-03">
             <div class="mask">
                 <a href="#hero-03">
-                    <img src="./wp-content/themes/blogCars/assets/images/hero_03.png" alt="hero_04.png">
+                    <img id="img-03" src="./wp-content/themes/blogCars/assets/images/hero_03.png" alt="hero_04.png">
                     <div class="category"> Vehicle</div>  
                     <div class="post-text-header">
                         <p>  Rickie Baroch - June 6, 2019</p>	
@@ -46,7 +46,7 @@
         <div class="hero-04">
             <div class="mask">
                 <a href="#hero-04">
-                    <img src="./wp-content/themes/blogCars/assets/images/hero_04.png" alt="hero_02.png">
+                    <img id="img-04" src="./wp-content/themes/blogCars/assets/images/hero_04.png" alt="hero_02.png">
                     <div class="category"> Vehicle</div>  
                     <div class="post-text-header">
                         <p>  Rickie Baroch - June 6, 2019</p>	
@@ -59,7 +59,7 @@
         <div class="hero-05">
             <div class="mask">
                 <a href="#hero-05">
-                    <img src="./wp-content/themes/blogCars/assets/images/hero_05.png" alt="hero_05.png">
+                    <img id="img-05" src="./wp-content/themes/blogCars/assets/images/hero_05.png" alt="hero_05.png">
                     <div class="category"> Vehicle</div>  
                     <div class="post-text-header">
                         <p>  Rickie Baroch - June 6, 2019</p>	
@@ -68,7 +68,7 @@
                 </a>
             </div>
         </div>
-    </div>	 
+    </div><!--container hero  -->
 			
 	<main> 
 		<div class="container">
@@ -261,7 +261,7 @@
 					</div> -->
 
 					<?php
-						dynamic_sidebar('sidebar-3');
+						dynamic_sidebar('sidebar-1');
 					?>
 
 					<button type="submit" class="submit btn btn-lg btn-block">
@@ -292,7 +292,7 @@
 						<button type="button" class="tag btn ">Monetize</button>						
 					</div> -->
 					<?php
-						dynamic_sidebar('sidebar-4');
+						dynamic_sidebar('sidebar-2');
 					?> 
 				</div> 
 

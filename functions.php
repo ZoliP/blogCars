@@ -62,7 +62,7 @@ function zoltan_widget_areas(){
             'before_widget' => '',
             'after_widget' => '',
             'name' => 'Sidebar Area Gallery',
-            'id' => 'sidebar-3',
+            'id' => 'sidebar-1',
             'description' => 'For Instagram Gallery',
         )
         );
@@ -73,7 +73,7 @@ function zoltan_widget_areas(){
             'before_widget' => '',
             'after_widget' => '',
             'name' => 'Sidebar Area Tags',
-            'id' => 'sidebar-4',
+            'id' => 'sidebar-2',
             'description' => 'For Tags',
         )
         );
