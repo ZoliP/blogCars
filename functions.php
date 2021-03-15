@@ -6,6 +6,11 @@ function zoltan_theme_support() {
     add_theme_support('title-tag');
     add_theme_support('custom-logo');
     add_theme_support('post-thumbnails');
+    // add_theme_support( 'post-formats', array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+    add_image_size('post-image', 770, 440, true);
+    add_image_size('hero-image-01', 360, 560, true);
+    add_image_size('hero-images', 360, 265, true);
+    add_image_size('gallery-widget', 130, 130, true);
 
 }
 

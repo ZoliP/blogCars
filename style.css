@@ -38,30 +38,38 @@ a:hover {
 }
 
 /* Category symbol left upper corner in posts*/
-.category {
+.category a {
   position: absolute;
+  display: inline;
   top: 8px;
   left: 8px;
   width: auto;
-  height: 22px;
+  height: 18px;
   line-height: 16px;
   background-color: #4a90e2;
   color: #ffffff;
   border-radius: 3px;
-  font-size: 12px;
-  padding: 4px 12px 2px 12px;
+  font-size: 10px;
+  padding: 2px 10px;
 }
 @media only screen and (min-width: 768px) {
-  .category {
+  .category a {
     top: 15px;
     left: 15px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .category {
+  .category a {
     top: 30px;
     left: 30px;
+    height: 22px;
+    font-size: 12px;
+    padding: 4px 12px 2px 12px;
   }
+}
+
+.category a:hover {
+  color: #171717;
 }
 
 /* Header */
@@ -176,7 +184,6 @@ input:target {
   padding: 0;
   margin-top: 30px;
   margin-bottom: 65px;
-  display: contents;
 }
 @media only screen and (min-width: 768px) {
   .hero {
@@ -198,46 +205,21 @@ input:target {
 }
 
 .hero-01,
-.hero-02,
-.hero-03,
-.hero-04,
-.hero-05 {
+.hero-small {
   position: relative;
   margin: 15px;
 }
-@media only screen and (min-width: 576px) {
-  .hero-01,
-.hero-02,
-.hero-03,
-.hero-04,
-.hero-05 {
-    margin: 15px;
-  }
-}
 @media only screen and (min-width: 768px) {
   .hero-01,
-.hero-02,
-.hero-03,
-.hero-04,
-.hero-05 {
+.hero-small {
     margin: 0;
   }
 }
 @media only screen and (min-width: 992px) {
   .hero-01,
-.hero-02,
-.hero-03,
-.hero-04,
-.hero-05 {
+.hero-small {
     margin: 0;
   }
-}
-
-.mask-01,
-.mask {
-  border-radius: 5px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4));
-  z-index: 1;
 }
 
 .hero-01 {
@@ -245,106 +227,118 @@ input:target {
   grid-row: 1/3;
 }
 
-#img-01,
+/* Big article in hero section*/
+.mask-01 img,
 .mask-01 {
-  z-index: -1;
-  width: 480px;
+  width: 510px;
+  height: 375px;
 }
 @media only screen and (min-width: 768px) {
-  #img-01,
+  .mask-01 img,
 .mask-01 {
-    width: 250px;
-    height: 387px;
+    width: 230px;
+    height: 353px;
   }
 }
 @media only screen and (min-width: 992px) {
-  #img-01,
+  .mask-01 img,
 .mask-01 {
-    width: 370px;
-    height: 582px;
+    width: 360px;
+    height: 560px;
   }
 }
 
-#img-02,
-#img-03,
-#img-04,
-#img-05,
+.mask-01 .post,
+.mask-01 a img,
+.mask .post,
+.mask a img {
+  padding: 0;
+}
+
+/* Small articles in hero section*/
+.hero-small img,
 .mask {
-  z-index: -1;
-  width: 480px;
+  width: 510px;
+  height: 375px;
 }
 @media only screen and (min-width: 768px) {
-  #img-02,
-#img-03,
-#img-04,
-#img-05,
+  .hero-small img,
 .mask {
-    width: 250px;
-    height: 186px;
+    width: 230px;
+    height: 169px;
   }
 }
 @media only screen and (min-width: 992px) {
-  #img-02,
-#img-03,
-#img-04,
-#img-05,
+  .hero-small img,
 .mask {
-    width: 370px;
-    height: 276px;
+    width: 360px;
+    height: 265px;
   }
 }
 
 .post-text-header {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4));
+  border-radius: 5px;
   position: absolute;
-  bottom: 8px;
-  left: 8px;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 8px 8px;
+  width: 510px;
 }
 @media only screen and (min-width: 768px) {
   .post-text-header {
-    bottom: 15px;
-    left: 15px;
+    width: 230px;
+    padding: 0 0 15px 15px;
   }
 }
 @media only screen and (min-width: 992px) {
   .post-text-header {
-    bottom: 30px;
-    left: 30px;
+    width: 360px;
+    padding: 0 0 23px 20px;
   }
 }
 
-.post-text-header p {
+.post-text-header > p {
   font-weight: normal;
   color: #ffffff;
   display: block;
 }
 @media only screen and (min-width: 768px) {
-  .post-text-header p {
+  .post-text-header > p {
     display: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  .post-text-header p {
+  .post-text-header > p {
     display: block;
   }
 }
 
-.post-text-header h6 {
+.post-text-header h6 p {
   font-weight: bold;
+  overflow: hidden;
+  overflow-wrap: break-word;
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+  width: 494px;
+  height: 34px;
+  margin: 0;
 }
 @media only screen and (min-width: 768px) {
-  .post-text-header h6 {
+  .post-text-header h6 p {
     font-size: 15px;
     line-height: 27px;
-    padding-right: 10px;
+    width: 200px;
+    height: 57px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .post-text-header h6 {
+  .post-text-header h6 p {
     font-size: 20px;
     line-height: 30px;
+    width: 320px;
+    height: 60px;
   }
 }
 
@@ -426,14 +420,14 @@ main .container {
   z-index: 1;
   float: left;
   width: 332px;
-  height: 135px;
+  height: 100px;
   margin: 141px 9px 54px 9px;
   padding: auto 5px 0 5px;
 }
 @media only screen and (min-width: 768px) {
   .article_description {
     width: 493px;
-    height: 200px;
+    height: 170px;
     margin: 210px 13.5px 81px 13.5px;
     padding: auto 10px 0 10px;
   }
@@ -452,20 +446,20 @@ main .container {
   font-weight: bold;
   font-size: 14px;
   line-height: 15px;
-  padding: 40px 0 3px 7px;
+  margin: 0 7px;
 }
 @media only screen and (min-width: 768px) {
   .article_description h6 {
     font-size: 20px;
     line-height: 25px;
-    padding: 50px 0 7px 15px;
+    margin: 0 15px;
   }
 }
 @media only screen and (min-width: 992px) {
   .article_description h6 {
     font-size: 25px;
     line-height: 28px;
-    padding: 72px 0 15px 30px;
+    margin: 20px 30px 15px 30px;
   }
 }
 
@@ -499,11 +493,12 @@ main .container {
   height: 30px;
   line-height: 12px;
   font-style: normal;
-  color: #ffffff;
+  display: none;
   overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
   .article_short > p {
+    display: block;
     color: #666666;
     height: 36px;
     line-height: 21px;
@@ -511,6 +506,7 @@ main .container {
 }
 @media only screen and (min-width: 992px) {
   .article_short > p {
+    display: block;
     color: #666666;
     height: 72px;
     line-height: 24px;
@@ -518,7 +514,7 @@ main .container {
 }
 
 /* Category symbol left upper corner in posts*/
-.single > ul > li > a {
+.post-categories > li > a {
   width: auto;
   height: 22px;
   background-color: #4a90e2;
@@ -527,6 +523,10 @@ main .container {
   font-size: 12px;
   line-height: 16px;
   padding: 4px 12px 2px 12px;
+}
+
+.post-categories > li > a:hover {
+  color: #171717;
 }
 
 /*Responsive Images in the articles*/

@@ -31,18 +31,19 @@ a:hover {
 }
 
 /* Category symbol left upper corner in posts*/
-.category {
+.category a {
   position: absolute;
+  display: inline;
   top: 8px;
   left: 8px;
   width: auto;
-  height: 22px;
+  height: 18px;
   line-height: 16px;
   background-color: $color-bg-category;
-  color: $color-text-category;
+  color: $color-text-light;
   border-radius: 3px;
-  font-size: 12px;
-  padding: 4px 12px 2px 12px;
+  font-size: 10px;
+  padding: 2px 10px;
   @include responsive(md) {
     top: 15px;
     left: 15px;
@@ -50,5 +51,12 @@ a:hover {
   @include responsive(lg) {
     top: 30px;
     left: 30px;
+    height: 22px;
+    font-size: 12px;
+    padding: 4px 12px 2px 12px;
   }
+}
+
+.category a:hover{
+  color: $color-text-dark;
 }

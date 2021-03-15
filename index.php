@@ -1,7 +1,8 @@
 <?php
 	get_header();
 ?>	
- 
+
+INDEX
 
  <div class="container hero" >
         <div class="hero-01"> 

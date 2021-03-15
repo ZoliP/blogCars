@@ -1,15 +1,19 @@
 /* Category symbol left upper corner in posts*/
-.single > ul > li > a
+.post-categories > li > a
 // .s-category
 {
   width: auto;
   height: 22px;
   background-color: $color-bg-category;
-  color: $color-text-category;
+  color: $color-text-light;
   border-radius: 3px;
   font-size: 12px;
   line-height: 16px;
   padding: 4px 12px 2px 12px;
+}
+
+.post-categories > li > a:hover{
+  color: $color-text-dark;
 }
 
 /*Responsive Images in the articles*/

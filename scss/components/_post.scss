@@ -40,12 +40,12 @@
   z-index: 1;
   float: left;
   width: 332px;
-  height: 135px;
+  height: 100px;
   margin: 141px 9px 54px 9px;
   padding: auto 5px 0 5px;
   @include responsive(md) {
     width: 493px;
-    height: 200px;
+    height: 170px;
     margin: 210px 13.5px 81px 13.5px;
     padding: auto 10px 0 10px;
   }
@@ -62,16 +62,16 @@
   font-weight: bold;
   font-size: $font-size;
   line-height: $line-height;
-  padding: 40px 0 3px 7px;
+  margin: 0 7px;
   @include responsive(md) {
     font-size: $font-size-h6-md;
     line-height: $line-height-h6-md;
-    padding: 50px 0 7px 15px;
+    margin: 0 15px;
   }
   @include responsive(lg) {
     font-size: $font-size-h6-lg;
     line-height: $line-height-h6-lg;
-    padding: 72px 0 15px 30px;
+    margin: 20px 30px 15px 30px;
   }
 }
 
@@ -99,14 +99,17 @@
   height: 30px;
   line-height: 12px;
   font-style: $font-style;
-  color: $color-bg-article;
+  display: none;
+  // color: $color-bg-article;
   overflow: hidden;
   @include responsive(md) {
+    display: block;
     color: $color-text-article;
     height: 36px;
     line-height: 21px;
   }
   @include responsive(lg) {
+    display: block;
     color: $color-text-article;
     height: 72px;
     line-height: 24px;
