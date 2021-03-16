@@ -2,20 +2,18 @@
     <div class="container hero" >
 
         <div class="hero-01"> 
-            <div class="mask-01">               
-                <?php $categoryPost = new WP_Query(array(
-                    'posts_per_page'=>'1',
-                    'category_name' =>'vehicle',
-                    'tag' =>'hero',
-                    )) ?>
-                <?php if($categoryPost->have_posts()): ?>
-                    <?php while($categoryPost->have_posts()): ?>
-                        <?php $categoryPost->the_post() ?>
-                        <?php get_template_part('template-parts/content', 'hero-01');?>
-                        <?php wp_reset_postdata(); ?>
-                    <?php endwhile ?>
-                <?php endif ?>                
-            </div>
+            <?php $categoryPost = new WP_Query(array(
+                'posts_per_page'=>'1',
+                'category_name' =>'vehicle',
+                'tag' =>'hero',
+                )) ?>
+            <?php if($categoryPost->have_posts()): ?>
+                <?php while($categoryPost->have_posts()): ?>
+                    <?php $categoryPost->the_post() ?>
+                    <?php get_template_part('template-parts/content', 'hero-01');?>
+                    <?php wp_reset_postdata(); ?>
+                <?php endwhile ?>
+            <?php endif ?>                
         </div>
 
         <?php $categoryPost1 = new WP_Query(array(

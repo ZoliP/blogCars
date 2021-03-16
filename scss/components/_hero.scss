@@ -19,6 +19,13 @@
   }
 }
 
+.hero .category a {
+  @include responsive(lg) {
+    top: 20px;
+    left: 20px;
+  }
+}
+
 .hero-01,
 .hero-small {
   position: relative;
@@ -37,8 +44,9 @@
 }
 
 /* Big article in hero section*/
-.mask-01 img,
-.mask-01 {
+.hero-01 img,
+ .hero-01 
+{
   width: 510px;
   height: 375px;
   @include responsive(md) {
@@ -51,16 +59,16 @@
   }
 }
 
-.mask-01 .post,
-.mask-01 a img,
-.mask .post,
-.mask a img {
+.hero-01 .post,
+.hero-01 a img,
+.hero-small .post,
+.hero-small a img {
   padding: 0;
 }
 
 /* Small articles in hero section*/
 .hero-small img,
-.mask {
+.hero-small {
   width: 510px;
   height: 375px;
   @include responsive(md) {
@@ -73,6 +81,7 @@
   }
 }
 
+/* Text on image*/
 .post-text-header {
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4));
   border-radius: 5px;
@@ -91,6 +100,7 @@
   }
 }
 
+/* Author and date*/
 .post-text-header > p {
   font-weight: $font-weight;
   color: $color-text-light;
@@ -102,7 +112,7 @@
     display: block;
   }
 }
-
+/* Short description of the post*/
 .post-text-header h6 p {
   font-weight: bold;
   overflow: hidden;
