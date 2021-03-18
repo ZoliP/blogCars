@@ -2,10 +2,10 @@
     <div class="article">
         <div class="image">
         <?php 
-                if ( has_post_thumbnail() ) {
-                    the_post_thumbnail('post-image');
-                }
-            ?>    
+            if ( has_post_thumbnail() ) {
+                the_post_thumbnail('post-image');
+            }
+        ?>    
         </div>
         <div class="article_description">
             <div class="article-text-header">

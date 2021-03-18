@@ -42,10 +42,22 @@ p.author_description {
   margin-bottom: 20px;
 }
 
+.popular_post >.post > img {
+  padding: 0;
+  float: none;
+}
+
+.popular_post a {
+  padding: 0;
+  margin-top: 15px;
+}
+
+
 /*Popular post's title */
 .popular_post h6 {
   font-size: 20px;
   line-height: 28px;
+  margin: 0;
 }
 
 /*Popular post's author */

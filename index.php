@@ -205,11 +205,12 @@ INDEX
 															
 				<div class="popular">
 					<h6>Popular posts</h6>
-					 <a href="#popular_01">
+					<a href="#popular_01">
 						<div class="popular_post">
 							<img src="./wp-content/themes/blogCars/assets/images/w_popular_post_01.png" alt="w_popular_post_01.png">
 							<div class="category"> Vehicle</div> 
-							<h6>One of Saturn's largest rings may be never than anyone</h6>								<p>Richie Baroch - June 6, 2019</p>
+							<h6>One of Saturn's largest rings may be never than anyone</h6>	
+							<p>Richie Baroch - June 6, 2019</p>
 						</div>	
 					</a>
 					
@@ -230,23 +231,6 @@ INDEX
 							<p>Richie Baroch - June 6, 2019</p>
 						</div>	
 					</a> 
-
-					<!-- <?php 
-						$popularPost = new WP_Query( 
-							array( 
-								'posts_per_page' => '4', 
-								'meta_key' => 'wpb_post_views_count', 
-								'orderby' => 'meta_value_num', 
-								'order' => 'DESC'  
-								) 
-						)
-					?>
-					<?php while ($popularPost->have_posts()): ?>
-						<?php $popularPost->the_post() ?>
-						<?php the_title() ?>
-					<?php endwhile ?>	
-					 -->
-
 
 
 				</div>
