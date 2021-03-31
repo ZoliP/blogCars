@@ -10,10 +10,17 @@ Author: Zoltan
 @import "base/general";
 
 @import "layout/header";
+@import "layout/archive";
+@import "layout/category";
 @import "components/hero";
 @import "layout/main";
-@import "components/post";
+@import "layout/page";
+@import "layout/post";
 @import "components/content_sarticle";
+@import "components/content_archive";
+@import "components/content_category";
 @import "components/widget";
+@import "components/content_popular";
 @import "components/most_popular_posts";
+@import "components/content_recent";
 @import "layout/footer";

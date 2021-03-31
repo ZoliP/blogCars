@@ -2,9 +2,9 @@
     get_header();
 ?>
 
-<div class="container">
-<h6>Archives</h6>
-    <?php
+ <div class="container"> 
+	<h3 class="archives">Archive posts</h3> 
+	<?php
     	if ( have_posts()) {
 	    	while ( have_posts() ){
 		    	the_post();
@@ -12,5 +12,5 @@
 		    }   
 	    }   
     ?>		
-</div>
+</div> 
 

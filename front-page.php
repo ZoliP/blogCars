@@ -12,8 +12,8 @@
                 <?php while($categoryPost->have_posts()): ?>
                     <?php $categoryPost->the_post() ?>
                     <?php get_template_part('template-parts/content', 'hero-01');?>
+                    <?php endwhile ?>
                     <?php wp_reset_postdata(); ?>
-                <?php endwhile ?>
             <?php endif ?>                
         </div>
 
@@ -28,9 +28,9 @@
                 <?php $categoryPost1->the_post() ?>
                 <?php if($i !== 0): // skip the first post ?>
                     <?php get_template_part('template-parts/content', 'hero-small');?>
+                    <?php endif ?>
+                    <?php $i++; endwhile ?>
                     <?php wp_reset_postdata(); ?>
-                <?php endif ?>
-            <?php $i++; endwhile ?>
         <?php endif ?> 
 
         <!--<div class="hero-small">
@@ -85,7 +85,7 @@
             </div>
         </div>  -->
 
-    </div> <!--.container hero  --> 
+    </div> <!--.container .hero  --> 
 <main> 
     <div class="container">
         <div class="articles">
@@ -108,8 +108,7 @@
             <div class="popular">
                 <h6>Popular posts</h6>                
                 <!-- Installed Wordpress Popular Posts by Hector Cabrera to collect meta data about post views -->
-                <?php 
-                    $popularPost = new WP_Query( 
+                <?php $popularPost = new WP_Query( 
                         array( 
                             'posts_per_page' => '4', 
                             'meta_key' => 'views_daily', 
@@ -122,8 +121,8 @@
                     <?php while ($popularPost->have_posts()): ?>
                         <?php $popularPost->the_post() ?>
                         <?php get_template_part('template-parts/content', 'popular');?>
-                        <?php wp_reset_postdata(); ?>
                         <?php endwhile ?>
+                        <?php wp_reset_postdata(); ?>
                 <?php else : ?>
                     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
                     <?php endif; ?>  	
@@ -177,13 +176,12 @@
             <?php while ($popularPost->have_posts()): ?>
                 <?php $popularPost->the_post() ?>
                 <?php get_template_part('template-parts/content', 'most-popular');?>
-                <?php wp_reset_postdata(); ?>
                 <?php endwhile ?>
+                <?php wp_reset_postdata(); ?>
         <?php else : ?>
             <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
             <?php endif; ?>
-	</div>
-
+	</div> <!-- .container .most-popular -->
 
 </main>
 <?php get_footer()?>

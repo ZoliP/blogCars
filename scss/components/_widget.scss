@@ -36,37 +36,6 @@ p.author_description {
   padding-bottom: 21px;
 }
 
-/* Popular block in widget section*/
-.popular_post {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.popular_post >.post > img {
-  padding: 0;
-  float: none;
-}
-
-.popular_post a {
-  padding: 0;
-  margin-top: 15px;
-}
-
-
-/*Popular post's title */
-.popular_post h6 {
-  font-size: 20px;
-  line-height: 28px;
-  margin: 0;
-}
-
-/*Popular post's author */
-.popular_post p {
-  margin-top: 10px;
-  font-style: italic;
-  color: $color-text-article;
-}
-
 /* Instagram block's picture block in widget section*/
 /*.pic_block {
   display: grid;

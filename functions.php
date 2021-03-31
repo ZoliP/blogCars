@@ -13,6 +13,7 @@ function zoltan_theme_support() {
     add_image_size('gallery-widget', 130, 130, true);
     add_image_size('popular', 270, 195, true);
     add_image_size('most-popular', 262, 189, true);
+    add_image_size('footer-recent', 95, 95, true);
 
 }
 

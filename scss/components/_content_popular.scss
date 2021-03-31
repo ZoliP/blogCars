@@ -1,0 +1,71 @@
+/* Popular block in widget section*/
+.popular_post {
+  position: relative;
+  margin-top: 5px;
+  @include responsive(lg) {
+    margin-bottom: 20px;
+  }
+
+  /*Popular post's title */
+  h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 15px;
+    height: 30px;
+    overflow: hidden;
+    @include responsive(md) {
+      font-size: 15px;
+      line-height: 25px;
+      height: 50px;
+      margin-top: 10px;
+    }
+    @include responsive(lg) {
+      font-size: 20px;
+      line-height: 28px;
+      height: 56px;
+      margin-top: 20px;
+    }
+  }
+
+  /*Popular post's author */
+  p {
+    margin: 0;
+    display: none;
+    @include responsive(md) {
+      display: block;
+    }
+    @include responsive(lg) {
+      font-style: italic;
+      color: $color-text-article;
+      margin-top: 10px;
+      display: block;
+    }
+  }
+
+  a {
+    padding: 0;
+    margin-top: 15px;
+  }
+
+  .category ul li a {
+    font-size: 10px;
+    padding: 2px 10px;
+    height: 18px;
+    line-height: 16px;
+    top: 8px;
+    left: 8px;
+    @include responsive(lg) {
+      top: 20px;
+      left: 20px;
+      height: 22px;
+      font-size: 12px;
+      padding: 4px 12px 4px 12px;
+    }
+  }
+}
+
+.popular_post > .post > img {
+  padding: 0;
+  float: none;
+}

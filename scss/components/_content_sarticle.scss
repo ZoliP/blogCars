@@ -9,10 +9,10 @@
   border-radius: 3px;
   font-size: 12px;
   line-height: 16px;
-  padding: 4px 12px 2px 12px;
+  padding: 4px 12px 4px 12px;
 }
 
-.post-categories > li > a:hover{
+.post-categories > li > a:hover {
   color: $color-text-dark;
 }
 
@@ -48,8 +48,9 @@
   }
 }
 
-/* Articles title*/
-.single-article h6 {
+/* Articles title, "Leave a comment" text*/
+.single-article h6,
+.comments-area h2 {
   padding: 10px;
   font-weight: bold;
   font-size: $font-size;
@@ -87,4 +88,9 @@
 .fn a,
 .commentmetadata a {
   color: $color-text-article;
+}
+
+/*Category badge*/
+.single ul {
+  padding: 0;
 }

@@ -1,0 +1,49 @@
+/*Articles block */
+.archive {
+  width: 370px;
+  height: auto;
+  margin: 0 auto;
+  background-color: $color-bg-article;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 0;
+  @include responsive(md) {
+    width: 547px;
+  }
+  @include responsive(lg) {
+    width: 810px;
+  }
+  /* Articles title*/
+  h6 {
+    padding: 10px 10px 0 10px;
+    font-weight: bold;
+    font-size: $font-size;
+    line-height: $line-height;
+    @include responsive(md) {
+      font-size: $font-size-h6-md;
+      line-height: $line-height-h6-md;
+    }
+    @include responsive(lg) {
+      font-size: $font-size-h6-lg;
+      line-height: $line-height-h6-lg;
+    }
+  }
+  /* Articles author*/
+  p {
+    font-style: $font-style;
+    padding: 10px;
+  }
+}
+
+/* Article*/
+.a-article > p {
+  font-style: normal;
+  width: 360px;
+  overflow-wrap: break-word;
+  @include responsive(md) {
+    width: 533px;
+  }
+  @include responsive(lg) {
+    width: 790px;
+  }
+}

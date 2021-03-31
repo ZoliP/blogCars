@@ -3,7 +3,7 @@
 ?>
 
 <div class="container">
-<h6>Categories</h6>
+	<h3 class="categories">Categories</h3>
     <?php
     	if ( have_posts()) {
 	    	while ( have_posts() ){

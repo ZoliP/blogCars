@@ -33,8 +33,23 @@
 				<div class="col-sm-1"></div>
 				<div class="recent col-sm-3">
 					<h5>Recent posts</h5>
-					<div class="post">
-						<a href="#recent_01"> 
+					<div class="recent-post">
+
+						<?php $popularPost = new WP_Query(array( 'posts_per_page' => '3'))?>
+						<?php if($popularPost->have_posts()): ?>
+							<?php while ($popularPost->have_posts()): ?>
+								<?php $popularPost->the_post() ?>
+								<?php get_template_part('template-parts/content', 'recent');?>
+								<?php endwhile ?>
+								<?php wp_reset_postdata(); ?>
+						<?php else : ?>
+							<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+							<?php endif; ?> 
+
+					</div>	<!-- .recent-post -->
+
+					<!--<div class="post">
+						 <a href="#recent_01"> 
                             <div>
 							    <img src="./wp-content/themes/blogCars/assets/images/recent_01.png" alt="recent_01">
 							    <div class="post-text-footer">
@@ -42,7 +57,7 @@
 								    <p>  Rickie Baroch - June 6, 2019</p>	
                                 </div>
                             </div>
-						</a>
+						</a> 
 					</div>										
 					<div class="post">
 						<a href="#recent_02"> 
@@ -65,8 +80,8 @@
                                 </div>
                             </div>
 						</a>
-					</div>
-				</div>	
+					</div>-->
+				</div>	<!-- .recent .col-sm-3 -->
 				<div class="col-sm-1"></div>				
 				<div class="newsletter col-sm-3">
 					<h5>Newsletter</h5>

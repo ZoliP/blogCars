@@ -1,0 +1,24 @@
+.archives {
+  color: $color-text-light;
+  background-color: $color-bg-category;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+  font-size: $font-size;
+  line-height: $line-height;
+  height: 31px;
+  padding: 8px 0;
+  @include responsive(md) {
+    font-size: $font-size-h6-md;
+    line-height: $line-height-h6-md;
+    height: 51px;
+    padding: 13px 0;
+  }
+  @include responsive(lg) {
+    font-size: $font-size-h6-lg;
+    line-height: $line-height-h6-lg;
+    height: 80px;
+    padding: 26px 0;
+  }
+}

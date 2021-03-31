@@ -7,18 +7,18 @@
 }
 
 main .most_popular {
-  //sbox-sizing: content-box;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-auto-flow: column;
-  gap: 30px;
+  gap: 40px;
   margin-bottom: 80px;
   @include responsive(md) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 30px;
   }
   @include responsive(lg) {
     display: grid;
@@ -30,7 +30,8 @@ main .most_popular {
     font-weight: bold;
     font-size: $font-size-hero-h6;
     line-height: $line-height-hero-h6;
-    height: 56px;
+    height: 20px;
+    margin-top: 20px;
     overflow: hidden;
     @include responsive(md) {
       font-size: $font-size-hero-h6-md;
@@ -39,11 +40,14 @@ main .most_popular {
     @include responsive(lg) {
       font-size: $font-size-hero-h6-lg;
       line-height: $line-height-hero-h6-lg;
+      height: 56px;
     }
   }
+
   p {
     margin-bottom: 0;
   }
+
   .popular_post {
     width: 540px;
     height: 480px;
@@ -56,6 +60,7 @@ main .most_popular {
       width: 262px;
       height: 298px;
     }
+
     img {
       width: 540px;
       height: 412px;
@@ -68,6 +73,7 @@ main .most_popular {
         height: 189px;
       }
     }
+
     a {
       margin: 0;
     }
