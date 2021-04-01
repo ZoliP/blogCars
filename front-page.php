@@ -33,58 +33,6 @@
                     <?php wp_reset_postdata(); ?>
         <?php endif ?> 
 
-        <!--<div class="hero-small">
-            <div class="mask">
-                 <a href="#hero-02">
-                    <img id="img" src="./wp-content/themes/blogCars/assets/images/hero_02.png" alt="hero_02.png">
-                    <div class="category"> Vehicle</div>  
-                    <div class="post-text-header">
-                        <p>  Rickie Baroch - June 6, 2019</p>	
-                        <h6> One of Saturn-s largest rings may be never than...</h6>	
-                    </div> 	
-                </a> 
-            </div>
-        </div>
-
-        <div class="hero-small">
-            <div class="mask">
-                <a href="#hero-03">
-                    <img id="img" src="./wp-content/themes/blogCars/assets/images/hero_03.png" alt="hero_03.png">
-                    <div class="category"> Vehicle</div>  
-                    <div class="post-text-header">
-                        <p>  Rickie Baroch - June 6, 2019</p>	
-                        <h6> One of Saturn-s largest rings may be never than...</h6>	
-                    </div> 	
-                </a>
-            </div>
-        </div>
-
-        <div class="hero-small">
-            <div class="mask">
-                <a href="#hero-04">
-                    <img id="img" src="./wp-content/themes/blogCars/assets/images/hero_04.png" alt="hero_04.png">
-                    <div class="category"> Vehicle</div>  
-                    <div class="post-text-header">
-                        <p>  Rickie Baroch - June 6, 2019</p>	
-                        <h6> One of Saturn-s largest rings may be never than...</h6>	
-                    </div> 	
-                </a>
-            </div>
-        </div>
-        
-        <div class="hero-small">
-            <div class="mask">
-                <a href="#hero-05">
-                    <img id="img" src="./wp-content/themes/blogCars/assets/images/hero_05.png" alt="hero_05.png">
-                    <div class="category"> Vehicle</div>  
-                    <div class="post-text-header">
-                        <p>  Rickie Baroch - June 6, 2019</p>	
-                        <h6> One of Saturn-s largest rings may be never than...</h6>	
-                    </div> 	
-                </a>
-            </div>
-        </div>  -->
-
     </div> <!--.container .hero  --> 
 <main> 
     <div class="container">
@@ -104,7 +52,21 @@
 
         <div class="col-sm-1"></div>
 
-        <div class="col-sm-3 widget">            
+        <div class="col-sm-3 widget">
+
+            <a href="#about">			
+                <div class="about">
+                    <img src="./wp-content/themes/blogCars/assets/images/w_about_us.png" alt="w_about_us.png">
+                    <h6> Leon Hunt</h6>
+                    <p>Car blogger</p>
+                    <p class="author_description"> Hi. I'm Leon. Rewieving cars is the way I express my creative side to the world. Welcome to my 
+                        Cars Blog site 
+                    </p>
+                    <button type="submit" class="submit btn btn-lg btn-block">Continue reading</button>
+                </div>
+            </a>
+
+
             <div class="popular">
                 <h6>Popular posts</h6>                
                 <!-- Installed Wordpress Popular Posts by Hector Cabrera to collect meta data about post views -->

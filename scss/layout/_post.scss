@@ -62,19 +62,19 @@
   font-weight: bold;
   font-size: $font-size;
   line-height: $line-height;
-  margin: 0 7px;
+  margin: 50px 7px 0;
   overflow: hidden;
   height: 15px;
   @include responsive(md) {
     font-size: $font-size-h6-md;
     line-height: $line-height-h6-md;
-    margin: 0 15px;
+    margin: 50px 15px 0;
     height: 25px;
   }
   @include responsive(lg) {
     font-size: $font-size-h6-lg;
     line-height: $line-height-h6-lg;
-    margin: 20px 30px 15px 30px;
+    margin: 72px 30px 15px 30px;
     height: 28px;
   }
 }
