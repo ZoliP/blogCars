@@ -37,17 +37,17 @@
 <main> 
     <div class="container">
         <div class="articles">
-            <?php $featuredPost = new WP_Query(array('posts_per_page'=>'5')) ?>
+            <?php $featuredPost = new WP_Query(array(
+                // 'posts_per_page'=>'5',
+                'order' => 'ASC'
+                )) 
+            ?>
             <?php if($featuredPost->have_posts()): ?>
                 <?php while($featuredPost->have_posts()): ?>
                     <?php $featuredPost->the_post() ?>
                     <?php get_template_part('template-parts/content', 'post');?>
                 <?php endwhile ?>
-            <?php endif ?>     
-        <!-- 
-            <?php
-                the_posts_pagination();
-			?>  -->
+            <?php endif ?>      
         </div>
 
         <div class="col-sm-1"></div>
@@ -109,13 +109,17 @@
     </div><!-- .container -->
 
     <div class="container pagination">
-        <button type="button" class="pag btn i0"><i class="fas fa-angle-left"></i></button>
+    <?php wp_pagenavi(); ?>
+    
+        <?php zoltan_pagination()?>
+    
+        <!-- <button type="button" class="pag btn i0"><i class="fas fa-angle-left"></i></button>
         <button type="button" class="pag btn i1">1</button>
         <button type="button" class="pag btn i2">2</button>
         <button type="button" class="pag btn i3">3</button>
         <button type="button" class="pag btn i4">...</button>
         <button type="button" class="pag btn i5">8</button>
-        <button type="button" class="pag btn i6"><i class="fas fa-angle-right"></i></button>
+        <button type="button" class="pag btn i6"><i class="fas fa-angle-right"></i></button> -->
     </div>
 
     <div class="container mpp">			

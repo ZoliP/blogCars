@@ -134,4 +134,18 @@ function zoltan_custom_wpp_update_postviews($postid) {
 /* Storing views of different time periods as meta keys */
 add_action( 'wpp_post_update_views', 'zoltan_custom_wpp_update_postviews' );
 
+
+function zoltan_pagination(){
+    
+    global $wp_query;
+    $big = 9999999; // need an unlikely integer
+    echo paginate_links(array(
+        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+        'format' => '?paged=%#%',
+        'current' => max(1, get_query_var('paged')),
+        'total' => $wp_query->max_num_pages,
+        'prev_text' => __('<button type="button" class="pag btn i0"><i class="fas fa-angle-left"></i></button>'),
+        'next_text' => __('<button type="button" class="pag btn i6"><i class="fas fa-angle-right"></i></button>')
+    ));
+}
 ?>

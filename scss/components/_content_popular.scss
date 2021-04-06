@@ -1,9 +1,9 @@
 /* Popular block in widget section*/
 .popular_post {
   position: relative;
-  margin-top: 5px;
-  @include responsive(lg) {
-    margin-bottom: 20px;
+  margin-bottom: 10px;
+  @include responsive(md) {
+    margin-bottom: 39px;
   }
 
   /*Popular post's title */

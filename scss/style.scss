@@ -10,8 +10,6 @@ Author: Zoltan
 @import "base/general";
 
 @import "layout/header";
-@import "layout/archive";
-@import "layout/category";
 @import "components/hero";
 @import "layout/main";
 @import "layout/page";
@@ -23,4 +21,5 @@ Author: Zoltan
 @import "components/content_popular";
 @import "components/most_popular_posts";
 @import "components/content_recent";
+@import "components/content_home_posts";
 @import "layout/footer";
