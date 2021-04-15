@@ -3,7 +3,7 @@
 ?>
 
 <div class="container">
-    <h3 class="pageTitles">Articles</h3>
+    <h5 class="pageTitles title">Articles</h5>
 	<?php
 		if ( have_posts()) {
 			while ( have_posts() ){
@@ -12,7 +12,9 @@
 			}   
 		}   
 	?>
-    <?php zoltan_pagination()?>	
+	<div class="container pagination">
+    	<?php zoltan_pagination()?>	
+	</div>
 </div>
 
 <?php

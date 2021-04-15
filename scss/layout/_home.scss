@@ -1,0 +1,10 @@
+.title {
+  width: 370px;
+  margin: 0 auto;
+  @include responsive(md) {
+    width: 547px;
+  }
+  @include responsive(lg) {
+    width: 810px;
+  }
+}

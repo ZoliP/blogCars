@@ -7,10 +7,15 @@ main .container {
 
 /* Pagination*/
 .pagination {
-  display: grid;
-  grid-template-areas: "i0 i1 i2 i3 i4 i5 i6";
-  grid-gap: 10px;
+  display: inline-flex;
   margin: 0 auto 78px auto;
+  justify-content: center;
+  .current .pag {
+    background-color: $color-text-dark;
+    color: $color-text-light;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 .pag {
@@ -18,27 +23,6 @@ main .container {
   height: 40px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
-}
-
-.pag:hover {
-  background-color: $color-text-dark;
-  color: $color-text-light;
-}
-
-/* Pagination */
-.prevnext {
-  margin: 20px;
-  text-align: center;
-  a {
-    font-weight: bold;
-    font-size: $font-size;
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-    color: $color-text-dark;
-    padding: 4px 10px;
-  }
-  a:hover {
-    color: $color-text-light;
-    background: $color-text-dark;
-  }
+  margin-left: 5px;
+  margin-right: 5px;
 }

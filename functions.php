@@ -6,7 +6,6 @@ function zoltan_theme_support() {
     add_theme_support('title-tag');
     add_theme_support('custom-logo');
     add_theme_support('post-thumbnails');
-    // add_theme_support( 'post-formats', array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
     add_image_size('post-image', 770, 440, true);
     add_image_size('hero-image-01', 360, 560, true);
     add_image_size('hero-images', 360, 265, true);
@@ -143,9 +142,14 @@ function zoltan_pagination(){
         'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
         'format' => '?paged=%#%',
         'current' => max(1, get_query_var('paged')),
+        'show_all' => true,
         'total' => $wp_query->max_num_pages,
         'prev_text' => __('<button type="button" class="pag btn i0"><i class="fas fa-angle-left"></i></button>'),
-        'next_text' => __('<button type="button" class="pag btn i6"><i class="fas fa-angle-right"></i></button>')
+        'next_text' => __('<button type="button" class="pag btn i6"><i class="fas fa-angle-right"></i></button>'),
+        'before_page_number' => '<button type="button" class="pag btn">',
+        'after_page_number'  => '</button>',
     ));
 }
+
+
 ?>

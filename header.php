@@ -74,10 +74,11 @@
 
 					
   				<div class="search col-sm-4">
-					<input id="search" type="text" class="search-input" placeholder="Search">
-	    			<a href="#search">
+					<?php get_search_form();?>
+				    <!-- <input id="search" type="text" class="search-input" placeholder="Search"> -->
+	    			<!-- <a href="#search">
 						<i class="icon fas fa-search"></i>
-					</a>    
+					</a>     -->
   				</div>
 			</div>
 		</div>	

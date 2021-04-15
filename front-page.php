@@ -38,8 +38,10 @@
     <div class="container">
         <div class="articles">
             <?php $featuredPost = new WP_Query(array(
-                // 'posts_per_page'=>'5',
-                'order' => 'ASC'
+                'posts_per_page'=>'5',
+                'category_name' =>'BMW',
+                'orderby' => 'date',
+                'order' => 'DESC', 
                 )) 
             ?>
             <?php if($featuredPost->have_posts()): ?>
@@ -47,7 +49,8 @@
                     <?php $featuredPost->the_post() ?>
                     <?php get_template_part('template-parts/content', 'post');?>
                 <?php endwhile ?>
-            <?php endif ?>      
+                <?php endif ?> 
+                <?php wp_reset_postdata(); ?>
         </div>
 
         <div class="col-sm-1"></div>
@@ -87,7 +90,7 @@
                         <?php wp_reset_postdata(); ?>
                 <?php else : ?>
                     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-                    <?php endif; ?>  	
+                    <?php endif; ?>  
             </div>	
                 
             <div class="instagram">
@@ -109,10 +112,10 @@
     </div><!-- .container -->
 
     <div class="container pagination">
-    <?php wp_pagenavi(); ?>
     
-        <?php zoltan_pagination()?>
-    
+        <?php wp_pagenavi();?>	
+        <?php zoltan_pagination();?>	
+
         <!-- <button type="button" class="pag btn i0"><i class="fas fa-angle-left"></i></button>
         <button type="button" class="pag btn i1">1</button>
         <button type="button" class="pag btn i2">2</button>

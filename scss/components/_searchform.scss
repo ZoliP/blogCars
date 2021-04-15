@@ -1,0 +1,37 @@
+/* Search block in header */
+.search {
+  display: inline-block;
+  text-align: right;
+  position: relative;
+  padding: 0;
+  padding: 0;
+  border: none;
+  /* Search icon in header */
+  i {
+    background-color: $color-bg-header;
+    padding: 43px 0 43px 36px;
+    color: $color-icon;
+    font-size: 17px;
+    position: relative;
+  }
+  /* Search icon on hover in header */
+  i:hover {
+    color: $color-text-hover;
+  }
+}
+
+/* Search input in header */
+.search-input {
+  display: none;
+  margin: 38px 0;
+  float: left;
+  background-color: $color-bg-header;
+  color: $color-text-light;
+  width: 75%;
+  min-height: 17px;
+  position: relative;
+}
+
+input:target {
+  display: block;
+}

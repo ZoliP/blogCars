@@ -12,10 +12,9 @@
 		    }   
 	    }   
     ?>
-	<div class="prevnext">
-		<?php previous_posts_link();?>  		
-		<?php next_posts_link();?>  		
-	</div>		
+	<div class="container pagination">
+    	<?php zoltan_pagination()?>	
+	</div>	
 </div>
 
 <?php

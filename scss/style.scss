@@ -10,10 +10,12 @@ Author: Zoltan
 @import "base/general";
 
 @import "layout/header";
+@import "components/searchform";
 @import "components/hero";
 @import "layout/main";
 @import "layout/page";
 @import "layout/post";
+@import "layout/home";
 @import "components/content_sarticle";
 @import "components/content_archive";
 @import "components/content_category";
