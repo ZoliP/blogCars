@@ -1,0 +1,27 @@
+.about {
+  margin-bottom: 40px;
+  > p {
+    padding: 0;
+    font-style: italic;
+    color: $color-text-author-about;
+
+    > a {
+      color: $color-text-author-about;
+      font-style: italic;
+    }
+  }
+}
+
+/* Author title*/
+.about p {
+}
+
+/* Author description*/
+p.author_description {
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 14px;
+  padding-bottom: 21px;
+}

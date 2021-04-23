@@ -39,7 +39,7 @@
         <div class="articles">
             <?php $featuredPost = new WP_Query(array(
                 'posts_per_page'=>'5',
-                'category_name' =>'BMW',
+                'category_name' =>'bmw',
                 'orderby' => 'date',
                 'order' => 'DESC', 
                 )) 
@@ -57,18 +57,16 @@
 
         <div class="col-sm-3 widget">
 
-            <a href="#about">			
-                <div class="about">
-                    <img src="./wp-content/themes/blogCars/assets/images/w_about_us.png" alt="w_about_us.png">
-                    <h6> Leon Hunt</h6>
-                    <p>Car blogger</p>
-                    <p class="author_description"> Hi. I'm Leon. Rewieving cars is the way I express my creative side to the world. Welcome to my 
-                        Cars Blog site 
-                    </p>
-                    <button type="submit" class="submit btn btn-lg btn-block">Continue reading</button>
-                </div>
-            </a>
-
+            <div class="about">	
+            <?php $about = new WP_Query(array('posts_per_page'=>'1','category_name' =>'About'))?>		
+                <?php if ($about -> have_posts()):?>
+                    <?php while ($about -> have_posts()):?>
+                        <?php $about -> the_post()?>
+                        <?php get_template_part('template-parts/content', 'about');?>
+                    <?php endwhile?>
+                <?php endif?>
+                <?php wp_reset_postdata();?>
+            </div>
 
             <div class="popular">
                 <h6>Popular posts</h6>                
@@ -82,7 +80,7 @@
                         ) 
                     )
                 ?>
-                <?php if($popularPost->have_posts()): ?>
+                <?php if ($popularPost->have_posts()): ?>
                     <?php while ($popularPost->have_posts()): ?>
                         <?php $popularPost->the_post() ?>
                         <?php get_template_part('template-parts/content', 'popular');?>
@@ -106,7 +104,21 @@
                 <?php
                     dynamic_sidebar('sidebar-2');
                 ?> 
-            </div>  
+            </div> 
+            
+            <div class="subscription">
+                <h6>Email newsletter</h6>
+                <p class="subscription_short">Sign up to receive email updates and to hear what's going on. </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control-plaintext" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control-plaintext" id="email" placeholder="Your email address">
+                    </div>
+                    <button type="submit" class="submit btn btn-lg btn-block">Subscribe to newsletter</button>
+                </form>
+            </div>
         </div> <!-- .widget -->
        
     </div><!-- .container -->
@@ -114,7 +126,6 @@
     <div class="container pagination">
     
         <?php wp_pagenavi();?>	
-        <?php zoltan_pagination();?>	
 
         <!-- <button type="button" class="pag btn i0"><i class="fas fa-angle-left"></i></button>
         <button type="button" class="pag btn i1">1</button>

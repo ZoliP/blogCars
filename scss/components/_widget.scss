@@ -1,8 +1,4 @@
-/* About block in widget section*/
-.about {
-  margin-bottom: 40px;
-}
-
+/* images in widget section*/
 .about img,
 .popular img,
 .instagram img {
@@ -11,29 +7,12 @@
   height: auto;
 }
 
-/* Author name*/
+/* Titles in: about, popular posts, instagram, tag section*/
 .widget h6 {
   font-weight: bold;
   font-size: 18px;
   line-height: 43px;
   padding-top: 20px;
-}
-
-/* Author title*/
-.about p {
-  font-style: italic;
-  color: $color-text-author-about;
-  padding-top: 8px;
-}
-
-/* Author description*/
-p.author_description {
-  font-style: $font-style;
-  font-weight: $font-weight;
-  font-size: 15px;
-  line-height: 25px;
-  padding-top: 14px;
-  padding-bottom: 21px;
 }
 
 /* Instagram block's picture block in widget section*/
